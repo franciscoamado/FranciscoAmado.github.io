@@ -34,7 +34,8 @@
 </head>
 
 <body id="page-top" class="index">
-
+	<?php include "hit_counter.php"; ?>
+	
     <!-- Header -->	
     <header>
 	<p>Forgive me if something isn't upright yet, I'm still developing this</p>
@@ -344,7 +345,16 @@
 	
 	<script type='text/javascript'>
 		$(document).ready(function() {
-			$('.progress .progress-bar').progressbar(); 
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			{// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp=new XMLHttpRequest();
+				console.log("hi");
+			}
+			var url = "hit_counter.php?metodo=hit";
+			xmlhttp.open("GET", url, true);
+			console.log("hi");
+			xmlhttp.send();
 		});
 	</script>
 	
