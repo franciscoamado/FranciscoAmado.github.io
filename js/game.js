@@ -89,13 +89,13 @@
    var Invader = function(game, center) {
       // cache the game object for later use
       this.game = game;
-      // Dimensions of the player
+      // Dimensions of the invader
       this.size = {
          x: 15,
          y: 15
       };
-      // Provide a center for the player. 
-      // He will be placed at the bottom mid of screen
+      // Provide a center for the invader. 
+      // He will be placed realtively to others invaders.
       this.center = center;
       this.patrolX = 0;
       this.speedX = 0.3;
@@ -164,7 +164,7 @@
       this.KEYS = {
          LEFT: 37,
          RIGHT: 39,
-         SHOOT: 16
+         SHOOT: 38
       };
    };
    var colliding = function(b1, b2) {
