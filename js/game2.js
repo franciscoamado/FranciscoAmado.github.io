@@ -26,7 +26,7 @@
             return bodies.filter(function(b2) {
                return colliding(b1, b2);
             }).length === 0;
-         }
+         };
          this.bodies = this.bodies.filter(notCollidingWithAnything);
          for(var i = 0; i < this.bodies.length; i++) {
             this.bodies[i].update();
@@ -83,6 +83,9 @@
             });
             this.game.addBody(bullet);
          }
+		 if(this.keyboader.isDown(this.keyboader.KEYS.REVIVE)){
+			this.game.addBody(new Player(this.game, {x: this.game.canvas.width,y: this.game.canvas.height}));
+		 }		 
       }
    };
    var Invader = function(game, center) {
@@ -90,23 +93,23 @@
       this.game = game;
       // Dimensions of the invader
       this.size = {
-         x: 15,
-         y: 15
+         x: 50,
+         y: 40
       };
       // Provide a center for the invader. 
       // He will be placed realtively to others invaders.
       this.center = center;
       this.patrolX = 0;
-      this.speedX = 0.3;
+      this.speedX = 0.5;
    };
    Invader.prototype = {
       update: function() {
-         if(this.patrolX < 0 || this.patrolX > 40) {
+         if(this.patrolX < 0 || this.patrolX > 100) {
             this.speedX = -this.speedX;
          }
          this.center.x += this.speedX;
          this.patrolX += this.speedX;
-         if(Math.random() > 0.995 && !this.game.invadersBelow(this)) {
+         if(Math.random() > 0.995) {
             var bullet = new Bullet({
                x: this.center.x,
                y: this.center.y + this.size.x / 2
@@ -120,14 +123,10 @@
    };
    var createInvaders = function(game) {
       var invaders = [];
-      for(var i = 0; i < 24; i++) {
-         var x = 30 + (i % 8) * 30;
-         var y = 30 + (i % 3) * 30;
          invaders.push(new Invader(game, {
-            x: x,
-            y: y
+            x: 150,
+            y: 40
          }));
-      };
       return invaders;
    };
    // A bullet
@@ -163,7 +162,8 @@
       this.KEYS = {
          LEFT: 37,
          RIGHT: 39,
-         SHOOT: 38
+         SHOOT: 38,
+		 REVIVE: 82
       };
    };
    var colliding = function(b1, b2) {
