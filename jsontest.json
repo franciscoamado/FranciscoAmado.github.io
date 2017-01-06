@@ -1,1 +1,0 @@
-{"Arduino": [{"Sensores": [{"nome": "sala1","localizacao": "interior","temperatura": 26.1,"humidade": 47.6},{"nome": "sala2","localizacao": "interior","temperatura": 26.1,"humidade": 49.3}]},{"ArCondicionado": {"nome": "ArC1","estado": "ON","accao": "Arrefecer"}}]}
