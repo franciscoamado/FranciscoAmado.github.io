@@ -16,16 +16,25 @@ tag {
 
 .skill, 
 skill {
-    background: #EEE;
-    text-align: center;
-    border-radius: 4px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    height: 30px;
-    line-height: 30px;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    letter-spacing: .1rem; }
+  background: #EEE;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .1rem; }
 
 a {
   text-decoration: none !important; }
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #eee;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(238, 238, 238);
+  padding: 4rem 0;
+  margin-bottom: 0;}
