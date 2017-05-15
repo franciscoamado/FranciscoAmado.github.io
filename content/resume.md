@@ -29,9 +29,9 @@ Finishing Bachelor's Degree at [ISEP](https://www.isep.ipp.pt/) in Software Engi
 1. Swift
 1. Objective-C
 1. Java
+1. Fastlane
 1. C/C++
 1. Git
-1. OS X
 
 ------
 
@@ -40,7 +40,7 @@ Finishing Bachelor's Degree at [ISEP](https://www.isep.ipp.pt/) in Software Engi
 Pixelmatters
 : *iOS Developer*
   __Jun 2016 - present__
-  Maintain and develop new features for [Finta](http://getfinta.com/), an iOS App where Social meets Football.
+  Maintain and develop new features for [Finta](http://getfinta.com/), an iOS App where Social meets Football. Here, I also got to maintain and refine our Deploy Pipeline with Fastlane.
 
 Jovago - Porto Tech Center
 : *iOS Developer*
@@ -50,7 +50,7 @@ Jovago - Porto Tech Center
 Porto Tech Center
 : *iOS Developer - Intern*
   __Jul 2015 - Sep 2015__
-  Summer internship developing a prototype iOS App for intern usage. Involved communication with a REST Service, Localization, GPS and Charts.
+  Summer internship developing a prototype iOS App for internal usage. Involved communication with a REST Service, Localization, GPS and Charts.
 
 ------
 
