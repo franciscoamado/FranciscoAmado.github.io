@@ -37,9 +37,14 @@ Finishing Bachelor's Degree at [ISEP](https://www.isep.ipp.pt/) in Software Engi
 
 ### Experience {#experience}
 
+Farfetch
+: *iOS Developer*
+  __Jun 2017 - present__
+  Maintain and develop new features for [Farfetch Discover](https://appstore.com/farfetch), an iOS Ecommerce for the world’s greatest selection of luxury.
+
 Pixelmatters
 : *iOS Developer*
-  __Jun 2016 - present__
+  __Jun 2016 - May 2017__
   Maintain and develop new features for [Finta](http://getfinta.com/), an iOS App where Social meets Football. Here, I also got to maintain and refine our Deploy Pipeline with Fastlane.
 
 Jovago - Porto Tech Center

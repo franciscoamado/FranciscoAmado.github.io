@@ -11,8 +11,15 @@
   font-size: 24px; }
 
 tag {
-  color: #F8F8F8;
-}
+  color: #F8F8F8; }
+
+stamp {
+  text-align: right;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-family: "Consolas Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 1.3rem;
+  color: #000; }
 
 .skill, 
 skill {
@@ -31,10 +38,11 @@ a {
   text-decoration: none !important; }
 
 .footer {
+  font-family: "Consolas", Helvetica, Arial, sans-serif;
   text-align: center;
   border-top: 1px solid #eee;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: rgb(238, 238, 238);
   padding: 4rem 0;
-  margin-bottom: 0;}
+  margin-bottom: 0; }
