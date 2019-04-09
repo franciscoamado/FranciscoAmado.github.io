@@ -10,12 +10,23 @@
   text-align: center;
   font-size: 24px; }
 
+.social {
+  font-family: "Consolas", Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  margin-right: .75rem;
+  color: #323232;
+  text-align: center;
+  font-size: 24px; }
+
 tag {
-  color: #F8F8F8; }
+  color: #F8F8F8; 
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem; }
 
 stamp {
   text-align: right;
-  text-transform: uppercase;
   font-family: "Consolas Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
   font-size: 1.3rem;
   color: #000; }
@@ -25,13 +36,12 @@ skill {
   background: #EEE;
   text-align: center;
   border-radius: 4px;
-  font-size: 1rem;
+  padding: 0.5rem;
   text-transform: uppercase;
-  height: 30px;
-  line-height: 30px;
-  margin-bottom: 1.5rem;
   font-weight: 600;
-  letter-spacing: .1rem; }
+  letter-spacing: .1rem; 
+  font-family: "Consolas Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 12px; }
 
 a {
   text-decoration: none !important; }
