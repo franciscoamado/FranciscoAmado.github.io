@@ -78,7 +78,7 @@ module.exports = {
         theme_color: `#323232`,
         display: `minimal-ui`,
         // edit below
-        icon: `static/assets/favicon.png`,
+        // icon: `static/assets/favicon.png`,
         legacy: false, // this will not add apple-touch-icon links to <head>
         cache_busting_mode: `none`,
         icon_options: {
