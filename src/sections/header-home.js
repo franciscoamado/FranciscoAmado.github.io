@@ -12,12 +12,12 @@ const HomeHeader = (props) => {
       <h4>
         iOS Engineer, Book Reader and Coffee Lover based in Porto!
       </h4>
-      <p style={{ marginBottom: 0 }}>
+      <Description>
         I'm working on <strong>iOS</strong> at <Tag text="Farfetch" href="http://farfetch.com/" background="#fd4f57"/>.
-      </p>
-      <p style={{ marginBottom: 0 }}>
+      </Description>
+      <Description>
         Studying for a Master's degree at <Tag text="ISEP" href="https://www.isep.ipp.pt/" background="#A13F25"/>.
-      </p>
+      </Description>
   </Container>
   );
 };
@@ -29,6 +29,13 @@ const Container = styled.div`
 
 const Title = styled.h1`
   text-transform: uppercase;
+`
+
+const Description = styled.body`
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.6;
 `
 
 export default (props) => <HomeHeader {...props} />;
