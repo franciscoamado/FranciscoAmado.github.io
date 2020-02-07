@@ -18,17 +18,26 @@ const Tag = (props) => {
 // }}
 
 const Container = styled.span`
+  background: ${props => props.props.background || "transparent"};
+  background-color: ${props => props.props.background || "transparent"};
   border: none;
-  padding: ${props => props.props.padding || "0.2rem 0.3rem 0.2rem 0.3rem"};
   cursor: pointer;
   border-radius: 1px;
-  background: ${props => props.props.background || "transparent"};
+  text-decoration: none !important;
+  &:hover {
+    opacity: 0.8;
+  }
 `
 
 const Title = styled.a`
+  background: ${props => props.props.background || "transparent"};
+  background-color: ${props => props.props.background || "transparent"};
   color: ${props => props.props.color || "white"};
-  text-decoration: none;
+  text-decoration: none !important;
   text-transform: strong;
+  &:hover {
+    opacity: 0.8;
+  }
 `
 
 export default (props) => <Tag {...props} />;

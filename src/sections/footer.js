@@ -32,13 +32,14 @@ const FooterRow = styled.div`
 `
 
 const SocialLink = styled.a`
+  background: transparent;
+  background-color: transparent;
+  color: #323232;
   font-family: "Consolas", Helvetica, Arial, sans-serif;
+  font-size: 24px;
   margin-bottom: 0;
   margin-right: .75rem;
-  color: #323232;
   text-align: center;
-  font-size: 24px;
-  background-color: transparent;
   text-decoration: none !important;
 `
 

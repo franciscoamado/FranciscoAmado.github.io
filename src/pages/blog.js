@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from 'styled-components'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -16,10 +17,10 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Blog" />
-        <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
+            <Container>
               <div key={node.fields.slug}>
                 <h3
                   style={{
@@ -40,9 +41,9 @@ class Blog extends React.Component {
                   }}
                 />
               </div>
+            </Container>
             )
           })}
-        </div>
       </Layout>
     )
   }
@@ -73,4 +74,10 @@ export const pageQuery = graphql`
       }
     }
   }
+`
+
+const Container = styled.div`
+  position: relative;
+  padding: 0 120px 6vw;
+  min-height: 200px;
 `

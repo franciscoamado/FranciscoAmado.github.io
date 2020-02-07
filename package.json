@@ -37,7 +37,6 @@
     "react-typography": "^0.16.19",
     "sharp": "^0.23.1",
     "styled-components": "^4.4.0",
-    "typeface-raleway": "0.0.54",
     "typography": "^0.16.19"
   },
   "devDependencies": {

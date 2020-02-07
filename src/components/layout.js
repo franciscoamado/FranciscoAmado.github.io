@@ -12,41 +12,31 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
+    const blogPath = `${__PATH_PREFIX__}/blog`
     let header
 
     if (location.pathname === rootPath) {
       header = (
         <HomeHeader title={title}/>
       )
-
-    } else if (location.pathname === blogPath) {
-
+    } else if (location.pathname === blogPath || location.pathname === (blogPath+'/')) {
       header = (
         <BlogHeader title={title}/>
       )
-      
     } else {
       header = (
         <h3
           style={{
-            fontFamily: `HelveticaNeue, sans-serif`,
             marginTop: 0,
           }}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/blog/`}
-          >
+          <Link to={`/blog/`}>
             {title}
           </Link>
         </h3>
       )
     }
+
     return (
       <Wrapper>
         <div

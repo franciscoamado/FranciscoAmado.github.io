@@ -14,10 +14,10 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: '16px',
   baseLineHeight: 1.666,
-  headerFontFamily: ["Raleway", "HelveticaNeue", "Helvetica Neue", 'Helvetica', 'Arial', 'sans-serif'],
+  headerFontFamily: ["-apple-system", "BlinkMacSystemFont", 'avenir next', "avenir", 'helvetica neue', "helvetica", "ubuntu", "roboto", "noto", 'segoe ui', "arial", "sans-serif"],
   headerWeight: 600,
   headerColor: '#333',
-  bodyFontFamily: ["HelveticaNeue", "Helvetica Neue", 'Helvetica', 'Arial', 'sans-serif'],
+  bodyFontFamily: ["-apple-system", "BlinkMacSystemFont", 'avenir next', "avenir", 'helvetica neue', "helvetica", "ubuntu", "roboto", "noto", 'segoe ui', "arial", "sans-serif"],
   bodyColor: '#222',
 })
 

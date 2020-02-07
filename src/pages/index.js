@@ -129,7 +129,7 @@ const Subtitle = styled.h5`
 
 const Stamp = styled.body`
   text-align: left;
-  font-family: "Consolas Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Consolas", Helvetica, Arial, sans-serif;
   font-size: 13px;
 `
 

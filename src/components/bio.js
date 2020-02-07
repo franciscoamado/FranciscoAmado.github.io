@@ -35,12 +35,18 @@ function Bio() {
               }}
             /> */}
             <div style={{ display: "block" }}>
-            <p style={{ marginBottom: 0 }}>
+            {/* <p style={{ marginBottom: 0 }}>
               Mumblings by <strong>{author}</strong>.
-            </p>  
-            <p>
-              Reach out on <Tag href={`https://twitter.com/${social.twitter}`} text="Twitter" background="#00aced"/>
-            </p>
+            </p>   */}
+            <Description>
+              That's it for now 👋🏻
+            </Description>
+            <Description>
+              If you have anything to share with me
+            </Description>
+            <Description>
+              feel free reach out on <Tag href={`https://twitter.com/${social.twitter}`} text="Twitter" background="#00aced"/>
+            </Description>
             </div>
           </Container>
         )
@@ -71,6 +77,15 @@ const bioQuery = graphql`
 
 const Container = styled.div`
   display: flex;
+  position: relative;
+  /* font-size: 2rem; */
+  padding: 0 120px;
+`
+const Description = styled.body`
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.6em;
 `
 
 export default Bio

@@ -110,16 +110,25 @@ CSS rules from skeleton.css
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 p {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 1.0rem; }
 
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* FIX LINKS BACKGROUND EVERYWHERE */
 a {
-  color: #1EAEDB; 
+  background: #36454f; 
+  background-color: #36454f; 
+  border: none;
+  border-radius: 1px;
+  color: white;
+  cursor: pointer;
+  padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+  text-transform: strong;
   text-decoration: none !important; }
 a:hover {
-  color: none; }
+  opacity: 80%; }
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

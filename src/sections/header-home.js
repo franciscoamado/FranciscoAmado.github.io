@@ -7,7 +7,7 @@ const HomeHeader = (props) => {
   return (
     <Container>
       <Title>
-        <ILink to='/'>{props.title}</ILink>
+        <ILink to='/' style={{ padding: 0 }}>{props.title}</ILink>
       </Title>
       <h4>
         iOS Engineer, Book Reader and Coffee Lover based in Porto!
@@ -29,6 +29,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
   text-transform: uppercase;
+  padding: 0;
 `
 
 const Description = styled.body`
