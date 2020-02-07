@@ -1,4 +1,4 @@
-name: Deply
+name: Deploy
 on:
   # Trigger the workflow on push to the dev branch
   push:
@@ -9,7 +9,11 @@ jobs:
     name: Gatsby Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Build
-        run: gatsby build
-      - name: Deploy to master
-        run: gh-pages -d public -b master
+      - name: Setup Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 10.x
+      - name: Install dependencies
+        run: yarn install --prod --pure-lockfile
+      - name: Deploy
+        run: yarn run deploy
