@@ -9,6 +9,7 @@ jobs:
     name: Gatsby Deploy
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@dev
       - name: Setup Node.js
         uses: actions/setup-node@master
         with:
