@@ -15,6 +15,6 @@ jobs:
         with:
           node-version: 10.x
       - name: Install dependencies
-        run: yarn install --prod --pure-lockfile
+        run: yarn install --pure-lockfile
       - name: Deploy
         run: yarn run deploy
