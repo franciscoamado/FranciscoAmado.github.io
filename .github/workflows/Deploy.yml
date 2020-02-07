@@ -1,0 +1,15 @@
+name: Deply
+on:
+  # Trigger the workflow on push to the dev branch
+  push:
+    branches:
+      - dev
+jobs:
+  deploy:
+    name: Gatsby Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: gatsby build
+      - name: Deploy to master
+        run: gh-pages -d public -b master
