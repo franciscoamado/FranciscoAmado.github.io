@@ -26,8 +26,10 @@ const Container = styled.footer`
 `
 
 const FooterRow = styled.div`
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
+  justify-content: center;
   text-align: center;
 `
 
@@ -41,6 +43,7 @@ const SocialLink = styled.a`
   margin-right: .75rem;
   text-align: center;
   text-decoration: none !important;
+  word-wrap: break-word;
 `
 
 export default Footer

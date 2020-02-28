@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import ILink from "../components/a-link";
 import Tag from "../components/tag";
+import Me from "../components/Me";
 
 const HomeHeader = (props) => {
   return (
     <Container>
       <Title>
-        <ILink to='/' style={{ padding: 0 }}>{props.title}</ILink>
+        <ILink to='/' style={{ padding: 0 }}>
+          <Me/>
+          <div>{props.title}</div>
+        </ILink>
       </Title>
       <h4>
         iOS Engineer, Book Reader and Coffee Lover based in Porto!
