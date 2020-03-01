@@ -116,9 +116,10 @@ const NextLink = styled(Link)`
   }
 
   &:hover {
-    color: none;    
+    color: #323232;    
     background: transparent;
     background-color: transparent;
     text-decoration: none !important;
+    opacity: 0.8;
   }
 `;

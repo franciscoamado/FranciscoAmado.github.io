@@ -9,7 +9,7 @@ const ILink = styled(Link)`
   background-color: transparent;
   text-decoration: none !important;
 
-  &:focus, &:hover, &:visited, &:link, &:active {
+  &:focus, &:visited, &:link, &:active {
     color: #323232;
     background: transparent;
     background-color: transparent;
@@ -17,10 +17,11 @@ const ILink = styled(Link)`
   }
 
   &:hover {
-    color: none;    
+    color: #323232;
     background: transparent;
     background-color: transparent;
     text-decoration: none !important;
+    opacity: 0.8;
   }
 `;
 

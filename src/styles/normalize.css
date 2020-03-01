@@ -128,7 +128,7 @@ a {
   text-transform: strong;
   text-decoration: none !important; }
 a:hover {
-  opacity: 80%; }
+  opacity: 0.8; }
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

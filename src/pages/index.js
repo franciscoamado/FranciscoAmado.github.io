@@ -48,7 +48,13 @@ class IndexPage extends React.Component {
 
         <Title>Projects</Title>
         <Row className="row" style={{ marginBottom: "0" }}>
-          <div>
+          <Column className="four columns">
+            <Subtitle>OpenPeeps in Framer X ✍🏻👨🏻</Subtitle>
+            <Stamp>Fev 2020</Stamp>
+            <Description>
+              Built a <Tag text="Framer X Component" href="https://github.com/FranciscoAmado/OpenPeeps.framerfx" background="#36454f"/> inspired by the <Tag text="Open Peeps" href="https://www.openpeeps.com/" background="#000"/> hand-drawn illustration library.
+            </Description>
+          </Column>
           <Column className="four columns">
             <Subtitle>iOS Peer Lab Porto ️☕⌨</Subtitle>
             <Stamp>Apr 2018</Stamp>
@@ -65,7 +71,8 @@ class IndexPage extends React.Component {
               It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/Sortify" background="#36454f"/>.
             </Description>
           </Column>
-
+        </Row>
+        <Row className="row" style={{ marginBottom: "0" }}>
           <Column className="four columns">
             <Subtitle>Intro to Vapor 🎥📣</Subtitle>
             <Stamp>Jul 2018</Stamp>
@@ -73,8 +80,6 @@ class IndexPage extends React.Component {
               I joined <strong><Tag text="David Matellano" href="https://twitter.com/damacri86" color="#00aced" padding="0"/></strong> to give an introductory workshop into Server-side Swift with <Tag text="Vapor" href="http://vapor.codes" background="#92A8CF"/> at the <Tag text="CocoaHeads Porto" href="https://twitter.com/cocoaheadsporto" background="#00aced"/> meetup. It was also <Tag text="recorded" href="https://youtu.be/vzpn7FqOUpI" background="#36454f"/> 😅.
             </Description>
           </Column>
-          </div>
-          <div>
           <Column className="four columns">
             <Subtitle>Timezones 🕔🌍</Subtitle>
             <Stamp>Jul 2018</Stamp>
@@ -92,7 +97,6 @@ class IndexPage extends React.Component {
               It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/vscode-html-leaf" background="#36454f"/>.
             </Description>
           </Column>
-          </div>
         </Row>
       </Layout>
     )
