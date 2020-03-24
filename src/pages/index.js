@@ -21,7 +21,7 @@ class IndexPage extends React.Component {
           <Column className="four columns">
             <Subtitle>Farfetch 👗👠</Subtitle>
             <Stamp>iOS Engineer</Stamp>
-            <Stamp>Jun 2017 - Present</Stamp>
+            <Stamp>Jun 2017 - Now</Stamp>
             <Description>
               At <strong><Tag text="Farfetch" href="https://farfetch.com" color="#fd4f57" padding="0"/></strong>, a platform for the world’s greatest selection of luxury, I'm maintaining and developing new features for the <Tag text="Discover" href="https://appstore.com/farfetch" background="#fd4f57" color="white"/> iOS app.
             </Description>
@@ -49,20 +49,31 @@ class IndexPage extends React.Component {
         <Title>Projects</Title>
         <Row className="row" style={{ marginBottom: "0" }}>
           <Column className="four columns">
+            <Subtitle>HouseHunter Telegram 📱🏡</Subtitle>
+            <Stamp>March 2020</Stamp>
+            <Description>
+              During my house hunting quest, I built a <Tag text="Telegram Bot" href="https://github.com/FranciscoAmado/househunter-vapor" background="#36454f"/> with a <Tag text="Vapor" href="http://vapor.codes" background="#92A8CF"/> Backend, to search house renting websites for me.
+            </Description>
+          </Column>
+          
+          <Column className="four columns">
             <Subtitle>OpenPeeps in Framer X ✍🏻👨🏻</Subtitle>
             <Stamp>Fev 2020</Stamp>
             <Description>
               Built a <Tag text="Framer X Component" href="https://github.com/FranciscoAmado/OpenPeeps.framerfx" background="#36454f"/> inspired by the <Tag text="Open Peeps" href="https://www.openpeeps.com/" background="#000"/> hand-drawn illustration library.
             </Description>
           </Column>
+
           <Column className="four columns">
             <Subtitle>iOS Peer Lab Porto ️☕⌨</Subtitle>
-            <Stamp>Apr 2018</Stamp>
+            <Stamp>2018 - 2019</Stamp>
             <Description>
               We're a <Tag text="Meetup" href="https://www.meetup.com/iOS-Peer-Lab-Porto/" background="#f65858"/> of iOS Developers that gets together every other Saturday to talk, code and share our knowledge.
             </Description>
           </Column>
 
+        </Row>
+        <Row className="row" style={{ marginBottom: "0" }}>
           <Column className="four columns">
             <Subtitle>Sortify ️⌨</Subtitle>
             <Stamp>Sep 2018</Stamp>
@@ -71,8 +82,7 @@ class IndexPage extends React.Component {
               It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/Sortify" background="#36454f"/>.
             </Description>
           </Column>
-        </Row>
-        <Row className="row" style={{ marginBottom: "0" }}>
+
           <Column className="four columns">
             <Subtitle>Intro to Vapor 🎥📣</Subtitle>
             <Stamp>Jul 2018</Stamp>
@@ -89,6 +99,8 @@ class IndexPage extends React.Component {
             </Description>
           </Column>
 
+        </Row>
+        <Row className="row" style={{ marginBottom: "0" }}>
           <Column className="four columns">
             <Subtitle>Leaf 🍃</Subtitle>
             <Stamp>Dec 2016</Stamp>

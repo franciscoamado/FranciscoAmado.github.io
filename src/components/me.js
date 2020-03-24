@@ -14,7 +14,7 @@ function Me() {
               {<Body/>}
               {<Head/>}
               {<Face/>}
-              {<Beard/>}
+              {/* {<Beard/>} */}
             </g>
           </g>
         </g>
