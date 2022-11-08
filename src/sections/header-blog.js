@@ -8,7 +8,7 @@ const BlogHeader = (props) => {
       <Title>
         <ILink to='/'>{props.title}</ILink>
       </Title>
-  </Container>
+    </Container>
   );
 };
 

@@ -6,7 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import Button from "../components/button"
+import Grid from "../components/Grid"
 
 class Blog extends React.Component {
   render() {
@@ -17,10 +17,12 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Blog" />
+        <Grid columns={4} style={{ gridColumnGap: "60px", marginBottom: 20 }}>
+
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-            <Container>
+            <Container className="collumn">
               <div key={node.fields.slug}>
                 <h3
                   style={{
@@ -29,7 +31,7 @@ class Blog extends React.Component {
                 >
                   <Link
                     style={{ boxShadow: `none` }}
-                    to={`blog${node.fields.slug}`}
+                    to={node.fields.slug}
                   >
                     {title}
                   </Link>
@@ -44,6 +46,7 @@ class Blog extends React.Component {
             </Container>
             )
           })}
+      </Grid>
       </Layout>
     )
   }
@@ -78,6 +81,6 @@ export const pageQuery = graphql`
 
 const Container = styled.div`
   position: relative;
-  padding: 0 120px 6vw;
+  padding: 0 0 6vw;
   min-height: 200px;
 `

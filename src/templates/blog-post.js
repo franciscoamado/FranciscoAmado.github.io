@@ -31,15 +31,15 @@ class BlogPostTemplate extends React.Component {
           >
           {post.frontmatter.date}
           </p>
-          <div style={{marginBottom: 0}}></div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          {/* <hr
+          <hr
             style={{
               marginBottom: rhythm(1),
             }}
-          /> */}
+          />
+        <h4>That's it for now 👋🏻</h4>
         </Container>
-        <Bio />
+        {/* <Bio /> */}
 
           <ul
             style={{
@@ -52,14 +52,14 @@ class BlogPostTemplate extends React.Component {
           >
             <li>
               {previous && (
-                <Link to={`blog${previous.fields.slug}`} rel="prev">
+                <NextLink to={`${previous.fields.slug}`} rel="prev">
                   ← {previous.frontmatter.title}
-                </Link>
+                </NextLink>
               )}
             </li>
             <li>
               {next && (
-                <NextLink to={`blog${next.fields.slug}`} rel="next">
+                <NextLink to={`${next.fields.slug}`} rel="next">
                   {next.frontmatter.title} →
                 </NextLink>
               )}
@@ -116,7 +116,7 @@ const NextLink = styled(Link)`
   }
 
   &:hover {
-    color: #323232;    
+    color: #323232;
     background: transparent;
     background-color: transparent;
     text-decoration: none !important;

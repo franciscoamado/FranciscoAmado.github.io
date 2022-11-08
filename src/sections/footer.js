@@ -12,8 +12,10 @@ const Footer = () => {
         <SocialLink href="https://twitter.com/franciscosamado" target="_blank" className="social"><strong>Twitter.</strong></SocialLink>
         <SocialLink href="https://github.com/FranciscoAmado" target="_blank" className="social"><strong>GitHub.</strong></SocialLink>
         <SocialLink href="https://www.linkedin.com/in/franciscoamado" target="_blank" className="social"><strong>LinkedIn.</strong></SocialLink>
-        <SocialLink href="resume/resume.pdf" target="_blank" className="social"><strong>Resume.</strong></SocialLink>
-        {/* <SocialLink><ILink to="/blog/"><strong>Blog.</strong></ILink></SocialLink> */}
+        <SocialLink href="https://docs.google.com/document/d/1bKKFkNoBZIhUFyM-HxSwzlsSbbirvVQ3AtsS_P72Xwg/edit?usp=sharing" target="_blank" className="social"><strong>Resume.</strong></SocialLink>
+        </FooterRow>
+      <FooterRow>
+        <SocialLink><ILink to="/blog/"><strong>Bad Access Memories.</strong></ILink></SocialLink>
       </FooterRow>
   </Container>
   );

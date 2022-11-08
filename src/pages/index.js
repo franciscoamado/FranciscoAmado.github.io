@@ -4,11 +4,12 @@ import styled from "styled-components";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag";
+import Grid from "../components/Grid"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "I'm Francisco"
-    
+    const siteTitle = "I'm Francisco,"
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -17,17 +18,26 @@ class IndexPage extends React.Component {
         />
 
         <Title>Experience</Title>
-        <Row className="row">
-          <Column className="four columns">
-            <Subtitle>Farfetch 👗👠</Subtitle>
+        <Grid columns={3} style={{ gridColumnGap: "24px" }}>
+          <Column>
+            <Subtitle>Anchorage Digital 🪙⚓️</Subtitle>
             <Stamp>iOS Engineer</Stamp>
-            <Stamp>Jun 2017 - Now</Stamp>
+            <Stamp>Apr 2022 - Now</Stamp>
             <Description>
-              At <strong><Tag text="Farfetch" href="https://farfetch.com" color="#fd4f57" padding="0"/></strong>, a platform for the world’s greatest selection of luxury, I'm maintaining and developing new features for the <Tag text="Discover" href="https://appstore.com/farfetch" background="#fd4f57" color="white"/> iOS app.
+              At <Tag text="Anchorage Digital" href="https://anchorage.com/" background="#254b40" color="white"/>, the first federally chartered crypto bank, we're helping institutions participate in digital assets.
             </Description>
           </Column>
 
-          <Column className="four columns">
+          <Column>
+            <Subtitle>Farfetch 👗👠</Subtitle>
+            <Stamp>iOS Engineer</Stamp>
+            <Stamp>Jun 2017 - April 2022</Stamp>
+            <Description>
+              At <strong><Tag text="Farfetch" href="https://farfetch.com" color="#fd4f57" padding="0"/></strong>, a platform for the world’s greatest selection of luxury, I've maintained and developed new features for the <Tag text="Discover" href="https://appstore.com/farfetch" background="#fd4f57" color="white"/> iOS app.
+            </Description>
+          </Column>
+
+          <Column>
             <Subtitle>Finta ⚽️📷</Subtitle>
             <Stamp>iOS Engineer</Stamp>
             <Stamp>Jun 2016 - Jun 2017</Stamp>
@@ -36,7 +46,7 @@ class IndexPage extends React.Component {
             </Description>
           </Column>
 
-          <Column className="four columns">
+          <Column>
             <Subtitle>Jovago ✈️🏢</Subtitle>
             <Stamp>Junior iOS Engineer</Stamp>
             <Stamp>Sep 2015 - Mar 2016</Stamp>
@@ -44,19 +54,19 @@ class IndexPage extends React.Component {
               Through my time at <strong><Tag text="Porto Tech Center" href="https://pt.linkedin.com/company/porto-tech-center" color="#F68B1E" padding="0"/></strong>, I was lucky to get to build <Tag text="Jovago" href="https://pt.linkedin.com/company/porto-tech-center" background="#2A72E8"/>'s iOS App, from blank to the App Store Release. An App for booking Hotels all over the world.
             </Description>
           </Column>
-        </Row>
+        </Grid>
 
         <Title>Projects</Title>
-        <Row className="row" style={{ marginBottom: "0" }}>
-          <Column className="four columns">
+        <Grid columns={3} style={{ gridColumnGap: "24px" }}>
+          <Column>
             <Subtitle>HouseHunter Telegram 📱🏡</Subtitle>
             <Stamp>March 2020</Stamp>
             <Description>
               During my house hunting quest, I built a <Tag text="Telegram Bot" href="https://github.com/FranciscoAmado/househunter-vapor" background="#36454f"/> with a <Tag text="Vapor" href="http://vapor.codes" background="#92A8CF"/> Backend, to search house renting websites for me.
             </Description>
           </Column>
-          
-          <Column className="four columns">
+
+          <Column>
             <Subtitle>OpenPeeps in Framer X ✍🏻👨🏻</Subtitle>
             <Stamp>Fev 2020</Stamp>
             <Description>
@@ -64,7 +74,7 @@ class IndexPage extends React.Component {
             </Description>
           </Column>
 
-          <Column className="four columns">
+          <Column>
             <Subtitle>iOS Peer Lab Porto ️☕⌨</Subtitle>
             <Stamp>2018 - 2019</Stamp>
             <Description>
@@ -72,36 +82,32 @@ class IndexPage extends React.Component {
             </Description>
           </Column>
 
-        </Row>
-        <Row className="row" style={{ marginBottom: "0" }}>
-          <Column className="four columns">
+          <Column>
             <Subtitle>Sortify ️⌨</Subtitle>
             <Stamp>Sep 2018</Stamp>
             <Description>
-              A Xcode Source Editor Extension for Sorting Lines. 
+              A Xcode Source Editor Extension for Sorting Lines.
               It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/Sortify" background="#36454f"/>.
             </Description>
           </Column>
 
-          <Column className="four columns">
+          <Column>
             <Subtitle>Intro to Vapor 🎥📣</Subtitle>
             <Stamp>Jul 2018</Stamp>
             <Description>
               I joined <strong><Tag text="David Matellano" href="https://twitter.com/damacri86" color="#00aced" padding="0"/></strong> to give an introductory workshop into Server-side Swift with <Tag text="Vapor" href="http://vapor.codes" background="#92A8CF"/> at the <Tag text="CocoaHeads Porto" href="https://twitter.com/cocoaheadsporto" background="#00aced"/> meetup. It was also <Tag text="recorded" href="https://youtu.be/vzpn7FqOUpI" background="#36454f"/> 😅.
             </Description>
           </Column>
-          <Column className="four columns">
+          <Column>
             <Subtitle>Timezones 🕔🌍</Subtitle>
             <Stamp>Jul 2018</Stamp>
             <Description>
-              A MacOS Status Bar Application for keeping track of different time zones. 
+              A MacOS Status Bar Application for keeping track of different time zones.
               It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/Timezones" background="#36454f"/>.
             </Description>
           </Column>
 
-        </Row>
-        <Row className="row" style={{ marginBottom: "0" }}>
-          <Column className="four columns">
+          <Column>
             <Subtitle>Leaf 🍃</Subtitle>
             <Stamp>Dec 2016</Stamp>
             <Description>
@@ -109,17 +115,11 @@ class IndexPage extends React.Component {
               It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/vscode-html-leaf" background="#36454f"/>.
             </Description>
           </Column>
-        </Row>
+        </Grid>
       </Layout>
     )
   }
 }
-
-const Row = styled.div`
-  margin-top: 20px;
-  margin-Bottom: 40px;
-  text-align: center;
-`
 
 const Column = styled.div`
   margin-top: 20px;
@@ -129,6 +129,7 @@ const Column = styled.div`
 const Title = styled.h4`
   text-transform: uppercase;
   letter-spacing: .2rem;
+  margin-top: 60px;
 `
 
 const Subtitle = styled.h5`
@@ -138,7 +139,7 @@ const Subtitle = styled.h5`
   padding: 0.5rem;
   text-transform: uppercase;
   font-weight: 650;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: .1rem;
   margin-bottom: 0;
 `
@@ -146,13 +147,13 @@ const Subtitle = styled.h5`
 const Stamp = styled.body`
   text-align: left;
   font-family: "Consolas", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
 `
 
 const Description = styled.body`
   text-align: left;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
 `
 

@@ -7,21 +7,18 @@ import Me from "../components/Me";
 const HomeHeader = (props) => {
   return (
     <Container>
-      <Title>
+      <Title style={{ marginBottom: 0 }}>
         <ILink to='/' style={{ padding: 0 }}>
           <Me/>
           <div>{props.title}</div>
         </ILink>
       </Title>
       <h4>
-        iOS Engineer, Book Reader and Coffee Lover based in Porto!
+        a Software Engineer from Porto, 🇵🇹!
       </h4>
-      <Description>
-        I'm working on <strong>iOS</strong> at <Tag text="Farfetch" href="http://farfetch.com/" background="#fd4f57"/>.
-      </Description>
-      <Description>
-        Studying for a Master's degree at <Tag text="ISEP" href="https://www.isep.ipp.pt/" background="#A13F25"/>.
-      </Description>
+      <h4>
+        I'm working on <strong>iOS</strong> at <Tag text="Anchorage Digital" href="https://anchorage.com/" background="#254b40"/>.
+      </h4>
   </Container>
   );
 };
