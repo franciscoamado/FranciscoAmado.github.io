@@ -24,7 +24,7 @@ class IndexPage extends React.Component {
             <Stamp>iOS Engineer</Stamp>
             <Stamp>Apr 2022 - Now</Stamp>
             <Description>
-              At <Tag text="Anchorage Digital" href="https://anchorage.com/" background="#254b40" color="white"/>, the first federally chartered crypto bank, we're helping institutions participate in digital assets.
+              At <strong><Tag text="Anchorage Digital" href="https://anchorage.com/" color="#254b40" padding="0"/></strong>, the first federally chartered crypto bank, we're helping institutions participate in digital assets.
             </Description>
           </Column>
 

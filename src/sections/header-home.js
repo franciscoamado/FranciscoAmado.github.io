@@ -9,7 +9,7 @@ const HomeHeader = (props) => {
     <Container>
       <Title style={{ marginBottom: 0 }}>
         <ILink to='/' style={{ padding: 0 }}>
-          <Me/>
+          {/* <Me/> */}
           <div>{props.title}</div>
         </ILink>
       </Title>

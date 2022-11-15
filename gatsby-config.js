@@ -23,13 +23,13 @@ module.exports = {
         name: `blog`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/content/assets`,
+    //     name: `assets`,
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -88,15 +88,9 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#323232`,
         display: `minimal-ui`,
-        icon: `static/assets/favicon.ico`,
+        icons: [],
         legacy: false, // this will not add apple-touch-icon links to <head>
         cache_busting_mode: `none`,
-        icon_options: {
-          // For all the options available, please see:
-          // https://developer.mozilla.org/en-US/docs/Web/Manifest
-          // https://w3c.github.io/manifest/#purpose-member
-          purpose: `maskable`,
-        },
       },
     },
     {

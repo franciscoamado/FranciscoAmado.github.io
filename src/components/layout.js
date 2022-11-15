@@ -28,6 +28,7 @@ class Layout extends React.Component {
         <h3
           style={{
             marginTop: 0,
+            padding: `0 120px 6vw`,
           }}
         >
           <Link to={`/blog/`}>
@@ -50,7 +51,7 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <div 
+        <div
           style={{
             borderTop: "1px solid #eee",
             borderTopWidth: "1px",
