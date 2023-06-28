@@ -16,13 +16,12 @@ class Layout extends React.Component {
     let header
 
     if (location.pathname === rootPath) {
-      header = (
-        <HomeHeader title={title}/>
-      )
-    } else if (location.pathname === blogPath || location.pathname === (blogPath+'/')) {
-      header = (
-        <BlogHeader title={title}/>
-      )
+      header = <HomeHeader title={title} />
+    } else if (
+      location.pathname === blogPath ||
+      location.pathname === blogPath + "/"
+    ) {
+      header = <BlogHeader title={title} />
     } else {
       header = (
         <h3
@@ -31,9 +30,7 @@ class Layout extends React.Component {
             padding: `0 120px 6vw`,
           }}
         >
-          <Link to={`/blog/`}>
-            {title}
-          </Link>
+          <Link to={`/blog/`}>{title}</Link>
         </h3>
       )
     }

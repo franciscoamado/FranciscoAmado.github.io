@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
 const GridWrapper = styled.section`
   display: grid;
-  grid-template-columns: ${props => `repeat(${props.columns}, 1fr)`};
+  grid-template-columns: ${(props) => `repeat(${props.columns}, 1fr)`};
 `
 
-const Grid = ({columns, children, style}) => {
+const Grid = ({ columns, children, style }) => {
   return (
     <GridWrapper columns={columns} style={style}>
       {children}
@@ -14,4 +14,4 @@ const Grid = ({columns, children, style}) => {
   )
 }
 
-export default Grid;
+export default Grid

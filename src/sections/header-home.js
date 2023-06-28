@@ -1,26 +1,30 @@
-import React from "react";
-import styled from "styled-components";
-import ILink from "../components/a-link";
-import Tag from "../components/tag";
+import React from "react"
+import styled from "styled-components"
+import ILink from "../components/a-link"
+import Tag from "../components/tag"
 
 const HomeHeader = (props) => {
   return (
     <Container>
       <Title style={{ marginBottom: 0 }}>
-        <ILink to='/' style={{ padding: 0 }}>
+        <ILink to="/" style={{ padding: 0 }}>
           {/* <Me/> */}
           <div>{props.title}</div>
         </ILink>
       </Title>
+      <h4>from Porto 🇵🇹 and sometimes Dublin 🇮🇪</h4>
       <h4>
-        from Porto 🇵🇹, sometimes Dublin 🇮🇪
+        I work at{" "}
+        <Tag
+          text="Anchorage Digital"
+          href="https://anchorage.com/"
+          background="#000000"
+        />{" "}
+        as a Software Engineer, mostly in Swift and Go.
       </h4>
-      <h4>
-        I work at <Tag text="Anchorage Digital" href="https://anchorage.com/" background="#000000"/> as a Software Engineer, mostly in Swift and Go.
-      </h4>
-  </Container>
-  );
-};
+    </Container>
+  )
+}
 
 const Container = styled.div`
   margin-top: 15%;
@@ -39,4 +43,4 @@ const Description = styled.body`
   line-height: 1.6;
 `
 
-export default (props) => <HomeHeader {...props} />;
+export default (props) => <HomeHeader {...props} />

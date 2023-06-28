@@ -17,7 +17,7 @@ function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
+      render={(data) => {
         const { author, location, social } = data.site.siteMetadata
         return (
           <Container>
@@ -35,18 +35,19 @@ function Bio() {
               }}
             /> */}
             <div style={{ display: "block" }}>
-            {/* <p style={{ marginBottom: 0 }}>
+              {/* <p style={{ marginBottom: 0 }}>
               Mumblings by <strong>{author}</strong>.
             </p>   */}
-            <Description>
-              That's it for now 👋🏻
-            </Description>
-            <Description>
-              If you have anything to share with me
-            </Description>
-            <Description>
-              feel free reach out on <Tag href={`https://twitter.com/${social.twitter}`} text="Twitter" background="#00aced"/>
-            </Description>
+              <Description>That's it for now 👋🏻</Description>
+              <Description>If you have anything to share with me</Description>
+              <Description>
+                feel free reach out on{" "}
+                <Tag
+                  href={`https://twitter.com/${social.twitter}`}
+                  text="Twitter"
+                  background="#00aced"
+                />
+              </Description>
             </div>
           </Container>
         )

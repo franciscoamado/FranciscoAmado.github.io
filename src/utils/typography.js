@@ -12,13 +12,39 @@ import Typography from "typography"
 // delete Wordpress2016.googleFonts
 
 const typography = new Typography({
-  baseFontSize: '16px',
+  baseFontSize: "16px",
   baseLineHeight: 1.666,
-  headerFontFamily: ["-apple-system", "BlinkMacSystemFont", 'avenir next', "avenir", 'helvetica neue', "helvetica", "ubuntu", "roboto", "noto", 'segoe ui', "arial", "sans-serif"],
+  headerFontFamily: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "avenir next",
+    "avenir",
+    "helvetica neue",
+    "helvetica",
+    "ubuntu",
+    "roboto",
+    "noto",
+    "segoe ui",
+    "arial",
+    "sans-serif",
+  ],
   headerWeight: 600,
-  headerColor: '#333',
-  bodyFontFamily: ["-apple-system", "BlinkMacSystemFont", 'avenir next', "avenir", 'helvetica neue', "helvetica", "ubuntu", "roboto", "noto", 'segoe ui', "arial", "sans-serif"],
-  bodyColor: '#222',
+  headerColor: "#333",
+  bodyFontFamily: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "avenir next",
+    "avenir",
+    "helvetica neue",
+    "helvetica",
+    "ubuntu",
+    "roboto",
+    "noto",
+    "segoe ui",
+    "arial",
+    "sans-serif",
+  ],
+  bodyColor: "#222",
 })
 
 // Hot reload typography in development.

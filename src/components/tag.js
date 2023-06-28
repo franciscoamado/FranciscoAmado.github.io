@@ -7,9 +7,9 @@ const Tag = (props) => {
       <Title props={props} href={`${props.href}`} target="_blank">
         {props.text}
       </Title>
-  </Container>
-  );
-};
+    </Container>
+  )
+}
 
 // style={{
 //   background: ${props.background},
@@ -18,8 +18,8 @@ const Tag = (props) => {
 // }}
 
 const Container = styled.span`
-  background: ${props => props.props.background || "transparent"};
-  background-color: ${props => props.props.background || "transparent"};
+  background: ${(props) => props.props.background || "transparent"};
+  background-color: ${(props) => props.props.background || "transparent"};
   border: none;
   cursor: pointer;
   border-radius: 1px;
@@ -30,9 +30,9 @@ const Container = styled.span`
 `
 
 const Title = styled.a`
-  background: ${props => props.props.background || "transparent"};
-  background-color: ${props => props.props.background || "transparent"};
-  color: ${props => props.props.color || "white"};
+  background: ${(props) => props.props.background || "transparent"};
+  background-color: ${(props) => props.props.background || "transparent"};
+  color: ${(props) => props.props.color || "white"};
   text-decoration: none !important;
   text-transform: strong;
   &:hover {
@@ -40,7 +40,7 @@ const Title = styled.a`
   }
 `
 
-export default (props) => <Tag {...props} />;
+export default (props) => <Tag {...props} />
 
 // const Tag = props => (
 //     <a href={`${props.href}`} style={{textDecoration: 'none'}}>

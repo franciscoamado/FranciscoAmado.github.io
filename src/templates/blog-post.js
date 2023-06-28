@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from 'styled-components'
+import styled from "styled-components"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -29,7 +29,7 @@ class BlogPostTemplate extends React.Component {
               marginTop: rhythm(-1),
             }}
           >
-          {post.frontmatter.date}
+            {post.frontmatter.date}
           </p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
@@ -37,34 +37,34 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-        <h4>That's it for now 👋🏻</h4>
+          <h4>That's it for now 👋🏻</h4>
         </Container>
         {/* <Bio /> */}
 
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous && (
-                <NextLink to={`${previous.fields.slug}`} rel="prev">
-                  ← {previous.frontmatter.title}
-                </NextLink>
-              )}
-            </li>
-            <li>
-              {next && (
-                <NextLink to={`${next.fields.slug}`} rel="next">
-                  {next.frontmatter.title} →
-                </NextLink>
-              )}
-            </li>
-          </ul>
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <NextLink to={`${previous.fields.slug}`} rel="prev">
+                ← {previous.frontmatter.title}
+              </NextLink>
+            )}
+          </li>
+          <li>
+            {next && (
+              <NextLink to={`${next.fields.slug}`} rel="next">
+                {next.frontmatter.title} →
+              </NextLink>
+            )}
+          </li>
+        </ul>
       </Layout>
     )
   }
@@ -101,14 +101,17 @@ const Container = styled.div`
 `
 
 const NextLink = styled(Link)`
-
   color: #323232;
   background: transparent;
   background-color: transparent;
   font-weight: bolder;
   text-decoration: none !important;
 
-  &:focus, &:hover, &:visited, &:link, &:active {
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
     color: #323232;
     background: transparent;
     background-color: transparent;
@@ -122,4 +125,4 @@ const NextLink = styled(Link)`
     text-decoration: none !important;
     opacity: 0.8;
   }
-`;
+`

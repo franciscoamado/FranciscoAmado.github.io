@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from 'styled-components'
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,35 +17,31 @@ class Blog extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Blog" />
         <Grid columns={4} style={{ gridColumnGap: "60px", marginBottom: 20 }}>
-
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-            <Container className="collumn">
-              <div key={node.fields.slug}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={node.fields.slug}
+              <Container className="collumn">
+                <div key={node.fields.slug}>
+                  <h3
+                    style={{
+                      marginBottom: rhythm(1 / 4),
+                    }}
                   >
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </div>
-            </Container>
+                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                </div>
+              </Container>
             )
           })}
-      </Grid>
+        </Grid>
       </Layout>
     )
   }
