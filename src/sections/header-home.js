@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import ILink from "../components/a-link";
 import Tag from "../components/tag";
-import Me from "../components/Me";
 
 const HomeHeader = (props) => {
   return (
@@ -14,10 +13,10 @@ const HomeHeader = (props) => {
         </ILink>
       </Title>
       <h4>
-        a Software Engineer from Porto, 🇵🇹!
+        from Porto 🇵🇹, sometimes Dublin 🇮🇪
       </h4>
       <h4>
-        I'm working on <strong>iOS</strong> at <Tag text="Anchorage Digital" href="https://anchorage.com/" background="#254b40"/>.
+        I work at <Tag text="Anchorage Digital" href="https://anchorage.com/" background="#000000"/> as a Software Engineer, mostly in Swift and Go.
       </h4>
   </Container>
   );

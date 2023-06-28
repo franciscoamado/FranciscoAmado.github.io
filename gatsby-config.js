@@ -3,7 +3,7 @@ module.exports = {
     title: `Bad Access Memories`,
     author: `Francisco Amado`,
     description: `A place for technical mumblings.`,
-    siteUrl: `https://franciscoamado.me/`,
+    siteUrl: `https://franciscoamado.github.io/`,
     social: {
       github: `FranciscoAmado`,
       linkedin: `franciscoamado`,

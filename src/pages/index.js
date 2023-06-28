@@ -1,5 +1,4 @@
 import React from "react"
-import { Link, Text } from "gatsby"
 import styled from "styled-components";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,17 +13,17 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`Francisco`, `Amado`, `blog`, `iOS`, `Developer`, `Engineer`, `Porto`]}
+          keywords={[`Francisco`, `Amado`, `blog`, `iOS`, `Developer`, `Software`, `Engineer`, `Porto`]}
         />
 
         <Title>Experience</Title>
         <Grid columns={3} style={{ gridColumnGap: "24px" }}>
           <Column>
             <Subtitle>Anchorage Digital 🪙⚓️</Subtitle>
-            <Stamp>iOS Engineer</Stamp>
+            <Stamp>Software Engineer</Stamp>
             <Stamp>Apr 2022 - Now</Stamp>
             <Description>
-              At <strong><Tag text="Anchorage Digital" href="https://anchorage.com/" color="#254b40" padding="0"/></strong>, the first federally chartered crypto bank, we're helping institutions participate in digital assets.
+              At <strong><Tag text="Anchorage Digital" href="https://anchorage.com/" color="#000000" padding="0"/></strong>, the first federally chartered crypto bank, we're helping institutions participate in digital assets.
             </Description>
           </Column>
 
@@ -59,6 +58,15 @@ class IndexPage extends React.Component {
         <Title>Projects</Title>
         <Grid columns={3} style={{ gridColumnGap: "24px" }}>
           <Column>
+            <Subtitle>One Swift to Rule them all 🎥📣</Subtitle>
+            <Stamp>Dec 2022</Stamp>
+            <Description>
+              Presented at one of <Tag text="Infraspeak" href="https://www.linkedin.com/showcase/inside-infraspeak/" background="#00aced"/>'s event. This was a great moment to put Swift into practice, test the tool's constraints and what can be built around it. It covered iOS, Backend, Frontend, GraphQL and the Developer Experience joining both worlds.
+              <br/>It was <Tag text="streamed" href="https://www.linkedin.com/events/speak-out-mobilesdevs-kotlinpla7008850125951254529/theater/" background="#36454f"/> on LinkedIn 😅.
+            </Description>
+          </Column>
+
+          <Column>
             <Subtitle>HouseHunter Telegram 📱🏡</Subtitle>
             <Stamp>March 2020</Stamp>
             <Description>
@@ -87,7 +95,7 @@ class IndexPage extends React.Component {
             <Stamp>Sep 2018</Stamp>
             <Description>
               A Xcode Source Editor Extension for Sorting Lines.
-              It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/Sortify" background="#36454f"/>.
+              <br/>Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/Sortify" background="#36454f"/>.
             </Description>
           </Column>
 
@@ -95,15 +103,17 @@ class IndexPage extends React.Component {
             <Subtitle>Intro to Vapor 🎥📣</Subtitle>
             <Stamp>Jul 2018</Stamp>
             <Description>
-              I joined <strong><Tag text="David Matellano" href="https://twitter.com/damacri86" color="#00aced" padding="0"/></strong> to give an introductory workshop into Server-side Swift with <Tag text="Vapor" href="http://vapor.codes" background="#92A8CF"/> at the <Tag text="CocoaHeads Porto" href="https://twitter.com/cocoaheadsporto" background="#00aced"/> meetup. It was also <Tag text="recorded" href="https://youtu.be/vzpn7FqOUpI" background="#36454f"/> 😅.
+              Joined <strong><Tag text="David Matellano" href="https://twitter.com/damacri86" color="#00aced" padding="0"/></strong> to give an introductory workshop into Server-side Swift with <Tag text="Vapor" href="http://vapor.codes" background="#92A8CF"/> at the <Tag text="CocoaHeads Porto" href="https://twitter.com/cocoaheadsporto" background="#00aced"/> meetup.
+              <br/>It was also <Tag text="recorded" href="https://youtu.be/vzpn7FqOUpI" background="#36454f"/> 😅.
             </Description>
           </Column>
+
           <Column>
             <Subtitle>Timezones 🕔🌍</Subtitle>
             <Stamp>Jul 2018</Stamp>
             <Description>
               A MacOS Status Bar Application for keeping track of different time zones.
-              It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/Timezones" background="#36454f"/>.
+              <br/>Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/Timezones" background="#36454f"/>.
             </Description>
           </Column>
 
@@ -112,7 +122,7 @@ class IndexPage extends React.Component {
             <Stamp>Dec 2016</Stamp>
             <Description>
               A small Extension for Visual Studio for highlighting <Tag text="Leaf" href="https://github.com/vapor/leaf" background="#8BC52B"/> files used with <Tag text="Vapor" href="http://vapor.codes" background="#92A8CF"/>, a framework for Server-Side Swift.
-              It is Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/vscode-html-leaf" background="#36454f"/>.
+              <br/>Open-sourced <Tag text="here" href="https://github.com/FranciscoAmado/vscode-html-leaf" background="#36454f"/>.
             </Description>
           </Column>
         </Grid>
