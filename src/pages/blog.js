@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import Grid from "../components/Grid"
+import Grid from "../components/grid"
 
 class Blog extends React.Component {
   render() {

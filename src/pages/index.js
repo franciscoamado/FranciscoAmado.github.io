@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
-import Grid from "../components/Grid"
+import Grid from "../components/grid"
 
 class IndexPage extends React.Component {
   render() {
