@@ -8,11 +8,10 @@ const HomeHeader = (props) => {
     <Container>
       <Title style={{ marginBottom: 0 }}>
         <ILink to="/" style={{ padding: 0 }}>
-          {/* <Me/> */}
           <div>{props.title}</div>
         </ILink>
       </Title>
-      <h4>from Porto 🇵🇹 and sometimes Dublin 🇮🇪</h4>
+      <h4>from Porto 🇵🇹</h4>
       <h4>
         I work at{" "}
         <Tag
@@ -20,7 +19,7 @@ const HomeHeader = (props) => {
           href="https://anchorage.com/"
           background="#000000"
         />{" "}
-        as a Software Engineer, mostly in Swift and Go.
+        as a Software Engineer, mostly in Go.
       </h4>
     </Container>
   )

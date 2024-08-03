@@ -7,7 +7,7 @@ import Grid from "../components/grid"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "I'm Francisco,"
+    const siteTitle = "I'm Francisco"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -32,7 +32,7 @@ class IndexPage extends React.Component {
             <Stamp>Software Engineer</Stamp>
             <Stamp>Apr 2022 - Now</Stamp>
             <Description>
-              At{" "}
+              At{""}
               <strong>
                 <Tag
                   text="Anchorage Digital"
@@ -40,9 +40,7 @@ class IndexPage extends React.Component {
                   color="#000000"
                   padding="0"
                 />
-              </strong>
-              , the first federally chartered crypto bank, we're helping
-              institutions participate in digital assets.
+              </strong>, the first USA federally chartered crypto bank, I'm working as an individual contributor developing software, maintaining it's  infrastructure, helping on recruiting and on-call.
             </Description>
           </Column>
 
@@ -60,7 +58,7 @@ class IndexPage extends React.Component {
                   padding="0"
                 />
               </strong>
-              , a platform for the world’s greatest selection of luxury, I've
+              , an e-commerce platform for the world’s greatest selection of luxury, I've
               maintained and developed new features for the{" "}
               <Tag
                 text="Discover"
@@ -68,7 +66,7 @@ class IndexPage extends React.Component {
                 background="#fd4f57"
                 color="white"
               />{" "}
-              iOS app.
+              iOS application.
             </Description>
           </Column>
 
@@ -86,15 +84,15 @@ class IndexPage extends React.Component {
                   padding="0"
                 />
               </strong>
-              , I've had the chance to be part of{" "}
+              , I was part of{" "}
               <Tag
                 text="Finta"
                 href="https://appsto.re/pt/GEiO9.i"
                 background="#00E582"
               />
-              , an app where Social meets Football. I've maintained and
+              , the first Portuguese Social app for Football fans. I maintained and
               developed new features for the iOS app and helped with the
-              development of the Android{" "}
+              kickstart of the Android{" "}
               <Tag
                 text="Beta"
                 href="https://goo.gl/JRGfHg"
@@ -118,13 +116,13 @@ class IndexPage extends React.Component {
                   padding="0"
                 />
               </strong>
-              , I was lucky to get to build{" "}
+              , I got to build{" "}
               <Tag
                 text="Jovago"
                 href="https://pt.linkedin.com/company/porto-tech-center"
                 background="#2A72E8"
               />
-              's iOS App, from blank to the App Store Release. An App for
+              's iOS App, from the ground up to the App Store Release. An App for
               booking Hotels all over the world.
             </Description>
           </Column>
@@ -136,20 +134,18 @@ class IndexPage extends React.Component {
             <Subtitle>One Swift to Rule them all 🎥📣</Subtitle>
             <Stamp>Dec 2022</Stamp>
             <Description>
-              Presented at one of{" "}
+              Presented at an{" "}
               <Tag
                 text="Infraspeak"
                 href="https://www.linkedin.com/showcase/inside-infraspeak/"
                 background="#00aced"
               />
-              's event. This was a great moment to put Swift into practice, test
-              the tool's constraints and what can be built around it. It covered
+              's event. Applying Swift to
               iOS, Backend, Frontend, GraphQL and the Developer Experience
-              joining both worlds.
-              <br />
-              It was{" "}
+              joining both worlds, this was a good moment to test
+              the tool's constraints.{" "}
               <Tag
-                text="streamed"
+                text="Streamed"
                 href="https://www.linkedin.com/events/speak-out-mobilesdevs-kotlinpla7008850125951254529/theater/"
                 background="#36454f"
               />{" "}
@@ -167,7 +163,7 @@ class IndexPage extends React.Component {
                 href="https://github.com/FranciscoAmado/househunter-vapor"
                 background="#36454f"
               />{" "}
-              with a{" "}
+              with a Swift{" "}
               <Tag
                 text="Vapor"
                 href="http://vapor.codes"
@@ -181,7 +177,7 @@ class IndexPage extends React.Component {
             <Subtitle>OpenPeeps in Framer X ✍🏻👨🏻</Subtitle>
             <Stamp>Fev 2020</Stamp>
             <Description>
-              Built a{" "}
+              Built a TypeScript{" "}
               <Tag
                 text="Framer X Component"
                 href="https://github.com/FranciscoAmado/OpenPeeps.framerfx"
@@ -201,14 +197,14 @@ class IndexPage extends React.Component {
             <Subtitle>iOS Peer Lab Porto ️☕⌨</Subtitle>
             <Stamp>2018 - 2019</Stamp>
             <Description>
-              We're a{" "}
+              Organized a recurrent{" "}
               <Tag
-                text="Meetup"
+                text="Local Meetup"
                 href="https://www.meetup.com/iOS-Peer-Lab-Porto/"
                 background="#f65858"
               />{" "}
-              of iOS Developers that gets together every other Saturday to talk,
-              code and share our knowledge.
+              for iOS Engineers to talk, code and share our knowledge.
+              We introduced a lot of new engineers to the iOS world and challenged seasoned engineers with new concepts.
             </Description>
           </Column>
 
@@ -217,7 +213,6 @@ class IndexPage extends React.Component {
             <Stamp>Sep 2018</Stamp>
             <Description>
               A Xcode Source Editor Extension for Sorting Lines.
-              <br />
               Open-sourced{" "}
               <Tag
                 text="here"
@@ -254,7 +249,6 @@ class IndexPage extends React.Component {
                 background="#00aced"
               />{" "}
               meetup.
-              <br />
               It was also{" "}
               <Tag
                 text="recorded"
