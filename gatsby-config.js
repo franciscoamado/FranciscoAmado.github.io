@@ -11,8 +11,8 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -23,13 +23,6 @@ module.exports = {
         name: `blog`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/assets`,
-    //     name: `assets`,
-    //   },
-    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -38,6 +31,8 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              quality: 90,
+              linkImagesToOriginal: true,
             },
           },
           {
@@ -49,7 +44,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-vscode`,
             options: {
-              theme: 'Quiet Light' // Or install your favorite theme from GitHub
+              theme: 'Quiet Light'
             }
           },
           `gatsby-remark-copy-linked-files`,
@@ -60,21 +55,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "UA-76695221-1", // Google Analytics / GA
+          "UA-76695221-1",
         ],
-        // This object gets passed directly to the gtag config command
-        // This config will be shared across all trackingIds
         gtagConfig: {
           anonymize_ip: true,
           cookie_expires: 0,
         },
-        // This object is used for configuration specific to this plugin
         pluginConfig: {
-          // Puts tracking script in the head instead of the body
           head: false,
-          // Setting this parameter is also optional
           respectDNT: true,
         },
       },
@@ -89,7 +78,7 @@ module.exports = {
         theme_color: `#323232`,
         display: `minimal-ui`,
         icons: [],
-        legacy: false, // this will not add apple-touch-icon links to <head>
+        legacy: false,
         cache_busting_mode: `none`,
       },
     },

@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
@@ -25,13 +24,15 @@ class IndexPage extends React.Component {
           ]}
         />
 
-        <Title>Experience</Title>
-        <Grid columns={3} style={{ gridColumnGap: "24px" }}>
-          <Column>
-            <Subtitle>Anchorage Digital 🪙⚓️</Subtitle>
-            <Stamp>Software Engineer</Stamp>
-            <Stamp>Apr 2022 - Now</Stamp>
-            <Description>
+        <h4 className="uppercase tracking-[0.2rem] mt-[60px]">Experience</h4>
+        <Grid columns={3} className="gap-6">
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              Anchorage Digital 🪙⚓️
+            </h5>
+            <div className="text-left font-mono text-sm">Software Engineer</div>
+            <div className="text-left font-mono text-sm">Apr 2022 - Now</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               At{""}
               <strong>
                 <Tag
@@ -41,14 +42,16 @@ class IndexPage extends React.Component {
                   padding="0"
                 />
               </strong>, the first USA federally chartered crypto bank, I'm working as an individual contributor developing software, maintaining it's  infrastructure, helping on recruiting and on-call.
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>Farfetch 👗👠</Subtitle>
-            <Stamp>iOS Engineer</Stamp>
-            <Stamp>Jun 2017 - April 2022</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              Farfetch 👗👠
+            </h5>
+            <div className="text-left font-mono text-sm">iOS Engineer</div>
+            <div className="text-left font-mono text-sm">Jun 2017 - April 2022</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               At{" "}
               <strong>
                 <Tag
@@ -58,7 +61,7 @@ class IndexPage extends React.Component {
                   padding="0"
                 />
               </strong>
-              , an e-commerce platform for the world’s greatest selection of luxury, I've
+              , an e-commerce platform for the world's greatest selection of luxury, I've
               maintained and developed new features for the{" "}
               <Tag
                 text="Discover"
@@ -67,14 +70,16 @@ class IndexPage extends React.Component {
                 color="white"
               />{" "}
               iOS application.
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>Finta ⚽️📷</Subtitle>
-            <Stamp>iOS Engineer</Stamp>
-            <Stamp>Jun 2016 - Jun 2017</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              Finta ⚽️📷
+            </h5>
+            <div className="text-left font-mono text-sm">iOS Engineer</div>
+            <div className="text-left font-mono text-sm">Jun 2016 - Jun 2017</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               At{" "}
               <strong>
                 <Tag
@@ -99,14 +104,16 @@ class IndexPage extends React.Component {
                 background="#00E582"
               />{" "}
               version.
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>Jovago ✈️🏢</Subtitle>
-            <Stamp>Junior iOS Engineer</Stamp>
-            <Stamp>Sep 2015 - Mar 2016</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              Jovago ✈️🏢
+            </h5>
+            <div className="text-left font-mono text-sm">Junior iOS Engineer</div>
+            <div className="text-left font-mono text-sm">Sep 2015 - Mar 2016</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               Through my time at{" "}
               <strong>
                 <Tag
@@ -124,16 +131,18 @@ class IndexPage extends React.Component {
               />
               's iOS App, from the ground up to the App Store Release. An App for
               booking Hotels all over the world.
-            </Description>
-          </Column>
+            </div>
+          </div>
         </Grid>
 
-        <Title>Projects</Title>
-        <Grid columns={3} style={{ gridColumnGap: "24px" }}>
-          <Column>
-            <Subtitle>One Swift to Rule them all 🎥📣</Subtitle>
-            <Stamp>Dec 2022</Stamp>
-            <Description>
+        <h4 className="uppercase tracking-[0.2rem] mt-[60px]">Projects</h4>
+        <Grid columns={3} className="gap-6">
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              One Swift to Rule them all 🎥📣
+            </h5>
+            <div className="text-left font-mono text-sm">Dec 2022</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               Presented at an{" "}
               <Tag
                 text="Infraspeak"
@@ -150,13 +159,15 @@ class IndexPage extends React.Component {
                 background="#36454f"
               />{" "}
               on LinkedIn 😅.
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>HouseHunter Telegram 📱🏡</Subtitle>
-            <Stamp>March 2020</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              HouseHunter Telegram 📱🏡
+            </h5>
+            <div className="text-left font-mono text-sm">March 2020</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               During my house hunting quest, I built a{" "}
               <Tag
                 text="Telegram Bot"
@@ -170,13 +181,15 @@ class IndexPage extends React.Component {
                 background="#92A8CF"
               />{" "}
               Backend, to search house renting websites for me.
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>OpenPeeps in Framer X ✍🏻👨🏻</Subtitle>
-            <Stamp>Fev 2020</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              OpenPeeps in Framer X ✍🏻👨🏻
+            </h5>
+            <div className="text-left font-mono text-sm">Fev 2020</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               Built a TypeScript{" "}
               <Tag
                 text="Framer X Component"
@@ -190,13 +203,15 @@ class IndexPage extends React.Component {
                 background="#000"
               />{" "}
               hand-drawn illustration library.
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>iOS Peer Lab Porto ️☕⌨</Subtitle>
-            <Stamp>2018 - 2019</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              iOS Peer Lab Porto ️☕⌨
+            </h5>
+            <div className="text-left font-mono text-sm">2018 - 2019</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               Organized a recurrent{" "}
               <Tag
                 text="Local Meetup"
@@ -205,13 +220,15 @@ class IndexPage extends React.Component {
               />{" "}
               for iOS Engineers to talk, code and share our knowledge.
               We introduced a lot of new engineers to the iOS world and challenged seasoned engineers with new concepts.
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>Sortify ️⌨</Subtitle>
-            <Stamp>Sep 2018</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              Sortify ️⌨
+            </h5>
+            <div className="text-left font-mono text-sm">Sep 2018</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               A Xcode Source Editor Extension for Sorting Lines.
               Open-sourced{" "}
               <Tag
@@ -220,13 +237,15 @@ class IndexPage extends React.Component {
                 background="#36454f"
               />
               .
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>Intro to Vapor 🎥📣</Subtitle>
-            <Stamp>Jul 2018</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              Intro to Vapor 🎥📣
+            </h5>
+            <div className="text-left font-mono text-sm">Jul 2018</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               Joined{" "}
               <strong>
                 <Tag
@@ -256,13 +275,15 @@ class IndexPage extends React.Component {
                 background="#36454f"
               />{" "}
               😅.
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>Timezones 🕔🌍</Subtitle>
-            <Stamp>Jul 2018</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              Timezones 🕔🌍
+            </h5>
+            <div className="text-left font-mono text-sm">Jul 2018</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               A MacOS Status Bar Application for keeping track of different time
               zones.
               <br />
@@ -273,13 +294,15 @@ class IndexPage extends React.Component {
                 background="#36454f"
               />
               .
-            </Description>
-          </Column>
+            </div>
+          </div>
 
-          <Column>
-            <Subtitle>Leaf 🍃</Subtitle>
-            <Stamp>Dec 2016</Stamp>
-            <Description>
+          <div className="w-full my-5 text-center">
+            <h5 className="bg-[#eee] text-center rounded p-2 uppercase font-semibold text-sm tracking-wider mb-0">
+              Leaf 🍃
+            </h5>
+            <div className="text-left font-mono text-sm">Dec 2016</div>
+            <div className="text-left mt-2.5 text-base leading-relaxed">
               A small Extension for Visual Studio for highlighting{" "}
               <Tag
                 text="Leaf"
@@ -301,48 +324,12 @@ class IndexPage extends React.Component {
                 background="#36454f"
               />
               .
-            </Description>
-          </Column>
+            </div>
+          </div>
         </Grid>
       </Layout>
     )
   }
 }
-
-const Column = styled.div`
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-`
-const Title = styled.h4`
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-top: 60px;
-`
-
-const Subtitle = styled.h5`
-  background: #eee;
-  text-align: center;
-  border-radius: 4px;
-  padding: 0.5rem;
-  text-transform: uppercase;
-  font-weight: 650;
-  font-size: 14px;
-  letter-spacing: 0.1rem;
-  margin-bottom: 0;
-`
-
-const Stamp = styled.body`
-  text-align: left;
-  font-family: "Consolas", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-`
-
-const Description = styled.body`
-  text-align: left;
-  margin-top: 10px;
-  font-size: 16px;
-  line-height: 1.6;
-`
 
 export default IndexPage

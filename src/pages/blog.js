@@ -1,10 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import Grid from "../components/grid"
 
 class Blog extends React.Component {
@@ -16,18 +14,14 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Blog" />
-        <Grid columns={4} style={{ gridColumnGap: "60px", marginBottom: 20 }}>
+        <Grid columns={4} className="gap-[60px] mb-5">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <Container className="collumn">
-                <div key={node.fields.slug}>
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <div key={node.fields.slug} className="relative pb-[6vw] min-h-[200px]">
+                <div>
+                  <h3 className="mb-1.5">
+                    <Link className="no-underline" to={node.fields.slug}>
                       {title}
                     </Link>
                   </h3>
@@ -38,7 +32,7 @@ class Blog extends React.Component {
                     }}
                   />
                 </div>
-              </Container>
+              </div>
             )
           })}
         </Grid>
@@ -72,10 +66,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
-
-const Container = styled.div`
-  position: relative;
-  padding: 0 0 6vw;
-  min-height: 200px;
 `

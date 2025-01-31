@@ -1,11 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from "styled-components"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -19,49 +17,37 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <Container>
+        <div className="relative leading-relaxed px-[120px] pb-[6vw] min-h-[230px]">
           <h1>{post.frontmatter.title}</h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-              marginTop: rhythm(-1),
-            }}
-          >
+          <p className="block -mt-6 mb-6 text-[0.83255rem] leading-[1.75rem]">
             {post.frontmatter.date}
           </p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
+          <hr className="mb-6" />
           <h4>That's it for now 👋🏻</h4>
-        </Container>
-        {/* <Bio /> */}
+        </div>
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+        <ul className="flex flex-wrap justify-between list-none p-0">
           <li>
             {previous && (
-              <NextLink to={`${previous.fields.slug}`} rel="prev">
+              <Link 
+                to={`${previous.fields.slug}`} 
+                rel="prev"
+                className="text-[#323232] bg-transparent font-bold no-underline hover:opacity-80 transition-opacity"
+              >
                 ← {previous.frontmatter.title}
-              </NextLink>
+              </Link>
             )}
           </li>
           <li>
             {next && (
-              <NextLink to={`${next.fields.slug}`} rel="next">
+              <Link 
+                to={`${next.fields.slug}`} 
+                rel="next"
+                className="text-[#323232] bg-transparent font-bold no-underline hover:opacity-80 transition-opacity"
+              >
                 {next.frontmatter.title} →
-              </NextLink>
+              </Link>
             )}
           </li>
         </ul>
@@ -90,39 +76,5 @@ export const pageQuery = graphql`
         description
       }
     }
-  }
-`
-
-const Container = styled.div`
-  position: relative;
-  line-height: 1.6em;
-  padding: 0 120px 6vw;
-  min-height: 230px;
-`
-
-const NextLink = styled(Link)`
-  color: #323232;
-  background: transparent;
-  background-color: transparent;
-  font-weight: bolder;
-  text-decoration: none !important;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    color: #323232;
-    background: transparent;
-    background-color: transparent;
-    text-decoration: none !important;
-  }
-
-  &:hover {
-    color: #323232;
-    background: transparent;
-    background-color: transparent;
-    text-decoration: none !important;
-    opacity: 0.8;
   }
 `

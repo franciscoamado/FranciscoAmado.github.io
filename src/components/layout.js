@@ -1,12 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
+import "../styles/global.css"
 
 import HomeHeader from "../sections/header-home"
 import BlogHeader from "../sections/header-blog"
 import Footer from "../sections/footer"
-
-import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
@@ -24,47 +22,24 @@ class Layout extends React.Component {
       header = <BlogHeader title={title} />
     } else {
       header = (
-        <h3
-          style={{
-            marginTop: 0,
-            padding: `0 120px 6vw`,
-          }}
-        >
+        <h3 className="mt-0 px-[120px] pb-[6vw]">
           <Link to={`/blog/`}>{title}</Link>
         </h3>
       )
     }
 
     return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(40),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
+      <div className="min-h-screen bg-stone-100">
+        <div className="mx-auto max-w-[80rem] px-4 sm:px-6 lg:px-8 py-8">
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <div
-          style={{
-            borderTop: "1px solid #eee",
-            borderTopWidth: "1px",
-            borderTopStyle: "solid",
-            borderTopColor: "rgb(238, 238, 238)",
-          }}
-        >
+        <div className="border-t border-t-gray-300">
           <Footer />
         </div>
-      </Wrapper>
+      </div>
     )
   }
 }
-
-const Wrapper = styled.div`
-  min-height: 100vh;
-`
 
 export default Layout

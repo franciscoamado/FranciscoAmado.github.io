@@ -1,85 +1,64 @@
 import React from "react"
-import styled from "styled-components"
 import ILink from "../components/a-link"
 
 const Footer = () => {
+  const socialLinkClasses = "bg-transparent text-[#323232] font-mono text-2xl mb-0 mr-3 text-center no-underline break-words"
+
   return (
-    <Container>
-      <FooterRow>
-        <SocialLink
+    <footer className="text-center py-16 mb-0">
+      <div className="flex flex-wrap mb-2.5 justify-center text-center">
+        <a
           href="mailto:franciscoamado@live.com.pt"
           target="_blank"
-          className="btn-social"
+          className={socialLinkClasses}
+          rel="noopener noreferrer"
         >
           👋🏻
-        </SocialLink>
-      </FooterRow>
-      <FooterRow>
-        <SocialLink
+        </a>
+      </div>
+      <div className="flex flex-wrap mb-2.5 justify-center text-center">
+        <a
           href="https://twitter.com/franciscosamado"
           target="_blank"
-          className="social"
+          className={socialLinkClasses}
+          rel="noopener noreferrer"
         >
           <strong>Twitter.</strong>
-        </SocialLink>
-        <SocialLink
+        </a>
+        <a
           href="https://github.com/FranciscoAmado"
           target="_blank"
-          className="social"
+          className={socialLinkClasses}
+          rel="noopener noreferrer"
         >
           <strong>GitHub.</strong>
-        </SocialLink>
-        <SocialLink
+        </a>
+        <a
           href="https://www.linkedin.com/in/franciscoamado"
           target="_blank"
-          className="social"
+          className={socialLinkClasses}
+          rel="noopener noreferrer"
         >
           <strong>LinkedIn.</strong>
-        </SocialLink>
-        <SocialLink
+        </a>
+        <a
           href="https://docs.google.com/document/d/1bKKFkNoBZIhUFyM-HxSwzlsSbbirvVQ3AtsS_P72Xwg/edit?usp=sharing"
           target="_blank"
-          className="social"
+          className={socialLinkClasses}
+          rel="noopener noreferrer"
         >
           <strong>Resume.</strong>
-        </SocialLink>
-      </FooterRow>
-      <FooterRow>
-        <SocialLink>
+        </a>
+      </div>
+      <div className="flex flex-wrap mb-2.5 justify-center text-center">
+        <a className={socialLinkClasses}>
           <ILink to="/blog/">
             <strong>Bad Access Memories.</strong>
           </ILink>
-        </SocialLink>
-      </FooterRow>
-    </Container>
+        </a>
+      </div>
+    </footer>
   )
 }
-
-const Container = styled.footer`
-  text-align: center;
-  padding: 4rem 0;
-  margin-bottom: 0;
-`
-
-const FooterRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  justify-content: center;
-  text-align: center;
-`
-
-const SocialLink = styled.a`
-  background: transparent;
-  background-color: transparent;
-  color: #323232;
-  font-family: "Consolas", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  margin-bottom: 0;
-  margin-right: 0.75rem;
-  text-align: center;
-  text-decoration: none !important;
-  word-wrap: break-word;
-`
 
 export default Footer
