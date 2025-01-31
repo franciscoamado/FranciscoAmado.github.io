@@ -14,11 +14,7 @@ const HomeHeader = (props) => {
       <h4>from Porto 🇵🇹</h4>
       <h4>
         I work at{" "}
-        <Tag
-          text="Anchorage Digital"
-          href="https://anchorage.com/"
-          background="#000000"
-        />{" "}
+        <Tag text="Anchorage Digital" href="https://anchorage.com/" background="#000000" />{" "}
         as a Software Engineer, mostly in Go.
       </h4>
     </Container>

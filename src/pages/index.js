@@ -32,15 +32,7 @@ class IndexPage extends React.Component {
             <Stamp>Software Engineer</Stamp>
             <Stamp>Apr 2022 - Now</Stamp>
             <Description>
-              At{""}
-              <strong>
-                <Tag
-                  text="Anchorage Digital"
-                  href="https://anchorage.com/"
-                  color="#000000"
-                  padding="0"
-                />
-              </strong>, the first USA federally chartered crypto bank, I'm working as an individual contributor developing software, maintaining it's  infrastructure, helping on recruiting and on-call.
+              At {" "}<Tag text="Anchorage Digital" href="https://anchorage.com/"/>, the first USA federally chartered crypto bank, I'm working as an individual contributor developing software, maintaining it's  infrastructure, helping on recruiting and on-call.
             </Description>
           </Column>
 
@@ -50,23 +42,12 @@ class IndexPage extends React.Component {
             <Stamp>Jun 2017 - April 2022</Stamp>
             <Description>
               At{" "}
-              <strong>
                 <Tag
                   text="Farfetch"
                   href="https://farfetch.com"
-                  color="#fd4f57"
-                  padding="0"
                 />
-              </strong>
               , an e-commerce platform for the world’s greatest selection of luxury, I've
-              maintained and developed new features for the{" "}
-              <Tag
-                text="Discover"
-                href="https://appstore.com/farfetch"
-                background="#fd4f57"
-                color="white"
-              />{" "}
-              iOS application.
+              maintained and developed new features for its iOS application.
             </Description>
           </Column>
 
@@ -76,29 +57,13 @@ class IndexPage extends React.Component {
             <Stamp>Jun 2016 - Jun 2017</Stamp>
             <Description>
               At{" "}
-              <strong>
                 <Tag
                   text="Pixelmatters"
                   href="https://www.pixelmatters.com/"
-                  color="#FF695C"
-                  padding="0"
                 />
-              </strong>
-              , I was part of{" "}
-              <Tag
-                text="Finta"
-                href="https://appsto.re/pt/GEiO9.i"
-                background="#00E582"
-              />
-              , the first Portuguese Social app for Football fans. I maintained and
+              , I was part of Finta, the first Portuguese Social app for Football fans. I maintained and
               developed new features for the iOS app and helped with the
-              kickstart of the Android{" "}
-              <Tag
-                text="Beta"
-                href="https://goo.gl/JRGfHg"
-                background="#00E582"
-              />{" "}
-              version.
+              kickstart of the Android Beta version.
             </Description>
           </Column>
 
@@ -108,21 +73,11 @@ class IndexPage extends React.Component {
             <Stamp>Sep 2015 - Mar 2016</Stamp>
             <Description>
               Through my time at{" "}
-              <strong>
                 <Tag
                   text="Porto Tech Center"
                   href="https://pt.linkedin.com/company/porto-tech-center"
-                  color="#F68B1E"
-                  padding="0"
                 />
-              </strong>
-              , I got to build{" "}
-              <Tag
-                text="Jovago"
-                href="https://pt.linkedin.com/company/porto-tech-center"
-                background="#2A72E8"
-              />
-              's iOS App, from the ground up to the App Store Release. An App for
+              , I got to build the Jovago iOS App, from the ground up to the App Store Release. An App for
               booking Hotels all over the world.
             </Description>
           </Column>
@@ -134,22 +89,11 @@ class IndexPage extends React.Component {
             <Subtitle>One Swift to Rule them all 🎥📣</Subtitle>
             <Stamp>Dec 2022</Stamp>
             <Description>
-              Presented at an{" "}
-              <Tag
-                text="Infraspeak"
-                href="https://www.linkedin.com/showcase/inside-infraspeak/"
-                background="#00aced"
-              />
-              's event. Applying Swift to
-              iOS, Backend, Frontend, GraphQL and the Developer Experience
+              Presented at one of Infraspeak
+              's <Tag text="event" href="https://www.linkedin.com/events/speak-out-mobilesdevs-kotlinpla7008850125951254529/theater/"/>.
+              Applying Swift to iOS, Backend, Frontend, GraphQL and its Developer Experience
               joining both worlds, this was a good moment to test
-              the tool's constraints.{" "}
-              <Tag
-                text="Streamed"
-                href="https://www.linkedin.com/events/speak-out-mobilesdevs-kotlinpla7008850125951254529/theater/"
-                background="#36454f"
-              />{" "}
-              on LinkedIn 😅.
+              the tool's constraints.
             </Description>
           </Column>
 
@@ -157,19 +101,7 @@ class IndexPage extends React.Component {
             <Subtitle>HouseHunter Telegram 📱🏡</Subtitle>
             <Stamp>March 2020</Stamp>
             <Description>
-              During my house hunting quest, I built a{" "}
-              <Tag
-                text="Telegram Bot"
-                href="https://github.com/FranciscoAmado/househunter-vapor"
-                background="#36454f"
-              />{" "}
-              with a Swift{" "}
-              <Tag
-                text="Vapor"
-                href="http://vapor.codes"
-                background="#92A8CF"
-              />{" "}
-              Backend, to search house renting websites for me.
+              During my house hunting quest, I built a <Tag text="Telegram Bot" href="https://github.com/FranciscoAmado/househunter-vapor"/> with a Swift Backend, to search house renting websites for me.
             </Description>
           </Column>
 
@@ -177,19 +109,7 @@ class IndexPage extends React.Component {
             <Subtitle>OpenPeeps in Framer X ✍🏻👨🏻</Subtitle>
             <Stamp>Fev 2020</Stamp>
             <Description>
-              Built a TypeScript{" "}
-              <Tag
-                text="Framer X Component"
-                href="https://github.com/FranciscoAmado/OpenPeeps.framerfx"
-                background="#36454f"
-              />{" "}
-              inspired by the{" "}
-              <Tag
-                text="Open Peeps"
-                href="https://www.openpeeps.com/"
-                background="#000"
-              />{" "}
-              hand-drawn illustration library.
+              Built a TypeScript Framer X <Tag text="Component" href="https://github.com/FranciscoAmado/OpenPeeps.framerfx"/> inspired by the Open Peeps hand-drawn illustration library.
             </Description>
           </Column>
 
@@ -197,12 +117,7 @@ class IndexPage extends React.Component {
             <Subtitle>iOS Peer Lab Porto ️☕⌨</Subtitle>
             <Stamp>2018 - 2019</Stamp>
             <Description>
-              Organized a recurrent{" "}
-              <Tag
-                text="Local Meetup"
-                href="https://www.meetup.com/iOS-Peer-Lab-Porto/"
-                background="#f65858"
-              />{" "}
+              Organized a recurrent local <Tag text="meetup" href="https://www.meetup.com/iOS-Peer-Lab-Porto/"/>{" "}
               for iOS Engineers to talk, code and share our knowledge.
               We introduced a lot of new engineers to the iOS world and challenged seasoned engineers with new concepts.
             </Description>
@@ -213,13 +128,7 @@ class IndexPage extends React.Component {
             <Stamp>Sep 2018</Stamp>
             <Description>
               A Xcode Source Editor Extension for Sorting Lines.
-              Open-sourced{" "}
-              <Tag
-                text="here"
-                href="https://github.com/FranciscoAmado/Sortify"
-                background="#36454f"
-              />
-              .
+              <br /><Tag text="Open-sourced" href="https://github.com/FranciscoAmado/Sortify"/>
             </Description>
           </Column>
 
@@ -227,35 +136,7 @@ class IndexPage extends React.Component {
             <Subtitle>Intro to Vapor 🎥📣</Subtitle>
             <Stamp>Jul 2018</Stamp>
             <Description>
-              Joined{" "}
-              <strong>
-                <Tag
-                  text="David Matellano"
-                  href="https://twitter.com/damacri86"
-                  color="#00aced"
-                  padding="0"
-                />
-              </strong>{" "}
-              to give an introductory workshop into Server-side Swift with{" "}
-              <Tag
-                text="Vapor"
-                href="http://vapor.codes"
-                background="#92A8CF"
-              />{" "}
-              at the{" "}
-              <Tag
-                text="CocoaHeads Porto"
-                href="https://twitter.com/cocoaheadsporto"
-                background="#00aced"
-              />{" "}
-              meetup.
-              It was also{" "}
-              <Tag
-                text="recorded"
-                href="https://youtu.be/vzpn7FqOUpI"
-                background="#36454f"
-              />{" "}
-              😅.
+              Joined <Tag text="David Matellano" href="https://twitter.com/damacri86"/> to give an introductory workshop into Server-side Swift with Vapor at the CocoaHeads Porto <Tag text="meetup" href="https://youtu.be/vzpn7FqOUpI"/>.
             </Description>
           </Column>
 
@@ -265,14 +146,7 @@ class IndexPage extends React.Component {
             <Description>
               A MacOS Status Bar Application for keeping track of different time
               zones.
-              <br />
-              Open-sourced{" "}
-              <Tag
-                text="here"
-                href="https://github.com/FranciscoAmado/Timezones"
-                background="#36454f"
-              />
-              .
+              <br /><Tag text="Open-sourced" href="https://github.com/FranciscoAmado/Timezones" />
             </Description>
           </Column>
 
@@ -280,27 +154,8 @@ class IndexPage extends React.Component {
             <Subtitle>Leaf 🍃</Subtitle>
             <Stamp>Dec 2016</Stamp>
             <Description>
-              A small Extension for Visual Studio for highlighting{" "}
-              <Tag
-                text="Leaf"
-                href="https://github.com/vapor/leaf"
-                background="#8BC52B"
-              />{" "}
-              files used with{" "}
-              <Tag
-                text="Vapor"
-                href="http://vapor.codes"
-                background="#92A8CF"
-              />
-              , a framework for Server-Side Swift.
-              <br />
-              Open-sourced{" "}
-              <Tag
-                text="here"
-                href="https://github.com/FranciscoAmado/vscode-html-leaf"
-                background="#36454f"
-              />
-              .
+              A small Extension for Visual Studio for highlighting Leaf files used with Vapor, a framework for Server-Side Swift.
+              <br /><Tag text="Open-sourced" href="https://github.com/FranciscoAmado/vscode-html-leaf"/>
             </Description>
           </Column>
         </Grid>

@@ -11,33 +11,24 @@ const Tag = (props) => {
   )
 }
 
-// style={{
-//   background: ${props.background},
-//   color: ${props => props.props.color || "white"},
-//   borderRadius: ${props => props.props.radius || "1px"},
-// }}
-
 const Container = styled.span`
-  background: ${(props) => props.props.background || "transparent"};
-  background-color: ${(props) => props.props.background || "transparent"};
+  background: "#000000";
+  background-color: "#000000";
+  boxShadow: none;
   border: none;
+  border-radius: 25px;
   cursor: pointer;
-  border-radius: 1px;
   text-decoration: none !important;
+  boxShadow: none;
   &:hover {
     opacity: 0.8;
   }
 `
 
 const Title = styled.a`
-  background: ${(props) => props.props.background || "transparent"};
-  background-color: ${(props) => props.props.background || "transparent"};
-  color: ${(props) => props.props.color || "white"};
+  border-radius: 1px;
+  color: "white";
   text-decoration: none !important;
-  text-transform: strong;
-  &:hover {
-    opacity: 0.8;
-  }
 `
 
 export default (props) => <Tag {...props} />
