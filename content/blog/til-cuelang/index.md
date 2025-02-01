@@ -1,7 +1,7 @@
 ---
 title: "TIL: CUE"
 date: "2024-01-04"
-description: "CUE, a programming language used for enhanced configuration and data validation."
+description: "CUE, a programming language for enhanced configuration and data validation"
 ---
 
 [CUE](https://cuelang.org/) has been on my radar for the last year. I got the chance to use it for configuring
