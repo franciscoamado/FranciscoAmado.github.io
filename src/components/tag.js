@@ -26,7 +26,6 @@ const Container = styled.span`
 `
 
 const Title = styled.a`
-  border-radius: 1px;
   color: "white";
   text-decoration: none !important;
 `
