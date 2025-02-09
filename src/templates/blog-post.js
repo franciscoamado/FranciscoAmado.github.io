@@ -110,14 +110,14 @@ const NextLink = styled(Link)`
   &:visited,
   &:link,
   &:active {
-    color: #323232;
+    color: var(--text-primary);
     background: transparent;
     background-color: transparent;
     text-decoration: none !important;
   }
 
   &:hover {
-    color: #323232;
+    color: var(--text-primary);
     background: transparent;
     background-color: transparent;
     text-decoration: none !important;

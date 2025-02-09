@@ -2,10 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import ILink from "../components/a-link"
 import Tag from "../components/tag"
+import ThemeToggle from "../components/theme-toggle"
 
 const HomeHeader = (props) => {
   return (
     <Container>
+      <ThemeToggle />
       <Title style={{ marginBottom: 0 }}>
         <ILink to="/" style={{ padding: 0 }}>
           <div>{props.title}</div>
@@ -14,7 +16,7 @@ const HomeHeader = (props) => {
       <h4>from Porto 🇵🇹</h4>
       <h4>
         I work at{" "}
-        <Tag text="Anchorage Digital" href="https://anchorage.com/" background="#000000" />{" "}
+        <Tag text="Anchorage Digital" href="https://anchorage.com/" />{" "}
         as a Software Engineer, mostly in Go.
       </h4>
     </Container>

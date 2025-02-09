@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const ILink = styled(Link)`
-  color: #323232;
+  color: var(--text-primary);
   background: transparent;
   background-color: transparent;
   text-decoration: none !important;
@@ -12,14 +12,14 @@ const ILink = styled(Link)`
   &:visited,
   &:link,
   &:active {
-    color: #323232;
+    color: var(--text-primary);
     background: transparent;
     background-color: transparent;
     text-decoration: none !important;
   }
 
   &:hover {
-    color: #323232;
+    color: var(--text-primary);
     background: transparent;
     background-color: transparent;
     text-decoration: none !important;

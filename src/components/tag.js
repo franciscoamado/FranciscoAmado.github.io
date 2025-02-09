@@ -12,8 +12,6 @@ const Tag = (props) => {
 }
 
 const Container = styled.span`
-  background: "#000000";
-  background-color: "#000000";
   boxShadow: none;
   border: none;
   border-radius: 25px;
@@ -26,7 +24,6 @@ const Container = styled.span`
 `
 
 const Title = styled.a`
-  color: "white";
   text-decoration: none !important;
 `
 

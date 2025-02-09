@@ -19,6 +19,30 @@ CSS rules from skeleton.css
 - Media Queries
 */
 
+/* Colors */
+:root {
+  --background: #ffffff;
+  --background-accent: #36454f;
+  --background-secondary: #eee;
+  --text-primary: #323232;
+  --text-secondary: #666666;
+  --text-primary-inverted: #ffffff;
+}
+
+:root.dark {
+  --background: #1a1a1a;
+  --background-accent: #bbbbbb;
+  --background-secondary: #eee;
+  --text-primary: #ffffff;
+  --text-primary-inverted: #1a1a1a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -111,17 +135,47 @@ CSS rules from skeleton.css
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 p {
   margin-top: 0;
-  margin-bottom: 1.0rem; }
+  margin-bottom: 1.0rem;
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h3 {
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h4 {
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* FIX LINKS BACKGROUND EVERYWHERE */
 a {
-  background: #36454f;
-  background-color: #36454f;
+  background: var(--background-accent);
+  background-color: var(--background-accent);
+  color: var(--text-primary-inverted);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
   border: none;
-  color: white;
   cursor: pointer;
   padding: 0.2rem 0.3rem 0.2rem 0.3rem;
   text-transform: strong;

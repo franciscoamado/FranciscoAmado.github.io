@@ -177,6 +177,7 @@ const Title = styled.h4`
 
 const Subtitle = styled.h5`
   background: #eee;
+  background: var(--background-secondary);
   text-align: center;
   border-radius: 4px;
   padding: 0.5rem;

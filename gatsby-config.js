@@ -58,8 +58,6 @@ module.exports = {
         name: `Bad Access Memories`,
         short_name: `Bad Access`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#323232`,
         display: `minimal-ui`,
         icons: [],
         legacy: false,

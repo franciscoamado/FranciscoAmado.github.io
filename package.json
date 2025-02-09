@@ -30,6 +30,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-switch": "^7.0.0",
+    "react-toggle-dark-mode": "^1.1.1",
     "react-typography": "^0.16.23",
     "sharp": "^0.32.6",
     "styled-components": "^6.1.14",
