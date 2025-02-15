@@ -5,7 +5,7 @@ export const useDarkMode = () => {
   const isBrowser = typeof window !== "undefined"
 
   const [theme, setTheme] = useState(
-    isBrowser ? window.localStorage.getItem('theme') || 'light' : 'light'
+    isBrowser ? window.localStorage.getItem('theme') || 'dark' : 'dark'
   )
 
   const toggleTheme = () => {
