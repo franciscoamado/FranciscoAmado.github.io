@@ -1,5 +1,6 @@
 // custom styles
-import "./src/styles/normalize.css"
+// import './src/styles/normalize.css'
+import './src/styles/global.css'
 // custom typefaces
 
 export const onClientEntry = () => {

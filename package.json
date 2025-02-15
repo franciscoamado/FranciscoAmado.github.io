@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.1.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "gatsby": "^5.12.12",
     "gatsby-cli": "^5.12.4",
     "gatsby-plugin-image": "^3.12.3",
@@ -25,6 +27,7 @@
     "gatsby-source-filesystem": "^5.12.1",
     "gatsby-transformer-remark": "^6.12.3",
     "gatsby-transformer-sharp": "^5.12.3",
+    "lucide-react": "^0.475.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
@@ -34,15 +37,17 @@
     "react-typography": "^0.16.23",
     "sharp": "^0.32.6",
     "styled-components": "^6.1.14",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7",
     "typography": "^0.16.21"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "gatsby-plugin-postcss": "^6.12.0",
+    "autoprefixer": "^10.4.20",
+    "gatsby-plugin-postcss": "^6.14.0",
     "gh-pages": "^6.1.0",
-    "postcss": "^8.4.31",
+    "postcss": "^8.5.2",
     "prettier": "^3.1.0",
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.4.17"
   },
   "homepage": "https://github.com/franciscoamado/franciscoamado.github.io#readme",
   "keywords": [
@@ -60,6 +65,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "typecheck": "tsc --noEmit"
   }
 }
