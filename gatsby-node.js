@@ -1,16 +1,15 @@
-const { path } = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require("path");
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        "@/components": path.resolve(__dirname, "src/components"),
-        "@/lib/utils": path.resolve(__dirname, "src/lib/utils"),
+        "@": path.resolve(__dirname, "src"),
       },
     },
-  })
-}
+  });
+};
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
