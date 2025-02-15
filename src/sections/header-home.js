@@ -6,38 +6,19 @@ import ThemeToggle from "../components/theme-toggle"
 
 const HomeHeader = (props) => {
   return (
-    <Container>
+    <div class="my-36">
       <ThemeToggle />
-      <Title style={{ marginBottom: 0 }}>
-        <ILink to="/" style={{ padding: 0 }}>
-          <div>{props.title}</div>
-        </ILink>
-      </Title>
-      <h4>from Porto 🇵🇹</h4>
-      <h4>
+      <h1 class="text-2xl/7 font-bold text-zinc-900 my-4 dark:text-zinc-100 sm:truncate sm:text-3xl sm:tracking-tight">
+          {props.title}
+      </h1>
+      <h4 class="text-zinc-900 dark:text-zinc-100">from Porto 🇵🇹</h4>
+      <h4 class="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
         I work at{" "}
-        <Tag text="Anchorage Digital" href="https://anchorage.com/" />{" "}
+        <Tag class="text-zinc-900 dark:text-zinc-100" text="Anchorage Digital" href="https://anchorage.com/" />{" "}
         as a Software Engineer, mostly in Go.
       </h4>
-    </Container>
+    </div>
   )
 }
-
-const Container = styled.div`
-  margin-top: 15%;
-  margin-bottom: 15%;
-`
-
-const Title = styled.h1`
-  text-transform: uppercase;
-  padding: 0;
-`
-
-const Description = styled.body`
-  text-align: left;
-  margin-bottom: 0;
-  font-size: 15px;
-  line-height: 1.6;
-`
 
 export default (props) => <HomeHeader {...props} />

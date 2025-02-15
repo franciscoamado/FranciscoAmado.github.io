@@ -1,10 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import Grid from "../components/grid"
 
 class Blog extends React.Component {
@@ -16,29 +14,25 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Blog" />
-        <Grid columns={4} style={{ gridColumnGap: "60px", marginBottom: 20 }}>
+        <Grid>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <Container className="collumn">
+              <div class="min-h-52 hover:opacity-60 transition-opacity">
+              <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                 <div key={node.fields.slug}>
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <h3 class="font-semibold text-zinc-900 dark:text-zinc-100">
                       {title}
-                    </Link>
                   </h3>
-                  <small>{node.frontmatter.date}</small>
+                  <p class="font-mono text-xs mt-2 mb-4">{node.frontmatter.date}</p>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,
                     }}
-                  />
+                    />
                 </div>
-              </Container>
+              </Link>
+              </div>
             )
           })}
         </Grid>
@@ -74,8 +68,3 @@ export const pageQuery = graphql`
   }
 `
 
-const Container = styled.div`
-  position: relative;
-  padding: 0 0 6vw;
-  min-height: 200px;
-`

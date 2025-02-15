@@ -1,24 +1,14 @@
 import React from "react"
-import styled from "styled-components"
-import ILink from "../components/a-link"
+import { Link } from "gatsby"
 
 const BlogHeader = (props) => {
   return (
-    <Container>
-      <Title>
-        <ILink to="/">{props.title}</ILink>
-      </Title>
-    </Container>
+    <div class="my-36">
+      <h1 class="uppercase text-2xl/7 font-bold text-zinc-900 dark:text-zinc-100 sm:truncate sm:text-3xl sm:tracking-tight">
+        <Link to="/">{props.title}</Link>
+      </h1>
+    </div>
   )
 }
-
-const Container = styled.div`
-  margin-top: 15%;
-  margin-bottom: 15%;
-`
-
-const Title = styled.h1`
-  text-transform: uppercase;
-`
 
 export default (props) => <BlogHeader {...props} />

@@ -1,12 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
 
 import HomeHeader from "../sections/header-home"
 import BlogHeader from "../sections/header-blog"
 import Footer from "../sections/footer"
-
-import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
@@ -24,47 +21,24 @@ class Layout extends React.Component {
       header = <BlogHeader title={title} />
     } else {
       header = (
-        <h3
-          style={{
-            marginTop: 0,
-            padding: `0 120px 6vw`,
-          }}
-        >
-          <Link to={`/blog/`}>{title}</Link>
-        </h3>
+        <h2 class="text-2xl/7 font-bold text-zinc-900 sm:truncate sm:text-3xl sm:tracking-tight">
+          <Link to={`/blog/`} >
+            {title}
+          </Link>
+        </h2>
       )
     }
 
     return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(40),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <header>{header}</header>
-          <main>{children}</main>
+      <div class="flex">
+        <div class="mx-auto max-w-screen-xl px-8">
+          <header class="text-zinc-900 dark:text-zinc-100">{header}</header>
+          <main class="text-zinc-900 dark:text-zinc-100">{children}</main>
+          <Footer class="mt-500"/>
         </div>
-        <div
-          style={{
-            borderTop: "1px solid #eee",
-            borderTopWidth: "1px",
-            borderTopStyle: "solid",
-            borderTopColor: "rgb(238, 238, 238)",
-          }}
-        >
-          <Footer />
-        </div>
-      </Wrapper>
+      </div>
     )
   }
 }
-
-const Wrapper = styled.div`
-  min-height: 100vh;
-`
 
 export default Layout

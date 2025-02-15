@@ -1,16 +1,10 @@
 import React from "react"
-import styled from "styled-components"
 
-const GridWrapper = styled.section`
-  display: grid;
-  grid-template-columns: ${(props) => `repeat(${props.columns}, 1fr)`};
-`
-
-const Grid = ({ columns, children, style }) => {
+const Grid = ({ children}) => {
   return (
-    <GridWrapper columns={columns} style={style}>
-      {children}
-    </GridWrapper>
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 mb-12">
+        {children}
+      </div>
   )
 }
 
