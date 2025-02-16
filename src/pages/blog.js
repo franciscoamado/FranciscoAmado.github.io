@@ -13,7 +13,7 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Blog" />
+        <SEO title="Random Access Memories" />
         <Grid>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
