@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import HomeHeader from "../sections/header-home"
 import BlogHeader from "../sections/header-blog"
 import Footer from "../sections/footer"
+import { ThemeProvider } from "../contexts/theme-context"
 
 class Layout extends React.Component {
   render() {
@@ -21,22 +22,26 @@ class Layout extends React.Component {
       header = <BlogHeader title={title} />
     } else {
       header = (
-        <h2 class="text-2xl/7 font-bold text-zinc-900 sm:truncate sm:text-3xl sm:tracking-tight">
-          <Link to={`/blog/`} >
-            {title}
-          </Link>
-        </h2>
+        <div class="mt-20 mb-12" style={{ padding: '0 120px' }}>
+          <h2 class="uppercase text-2xl font-bold text-zinc-900 dark:text-zinc-100 sm:truncate sm:text-3xl sm:tracking-tight">
+            <Link to={`/blog/`} >
+              {title}
+            </Link>
+          </h2>
+        </div>
       )
     }
 
     return (
-      <div class="flex">
-        <div class="mx-auto max-w-screen-xl px-8">
-          <header class="text-zinc-900 dark:text-zinc-100">{header}</header>
-          <main class="text-zinc-900 dark:text-zinc-100">{children}</main>
-          <Footer class="mt-500"/>
+      <ThemeProvider>
+        <div class="flex">
+          <div class="mx-auto max-w-screen-xl px-8">
+            <header class="text-zinc-900 dark:text-zinc-100">{header}</header>
+            <main class="text-zinc-900 dark:text-zinc-100">{children}</main>
+            <Footer class="mt-500"/>
+          </div>
         </div>
-      </div>
+      </ThemeProvider>
     )
   }
 }

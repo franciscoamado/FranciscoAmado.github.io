@@ -1,20 +1,22 @@
 import React from "react"
 import styled from "styled-components"
 import ILink from "../components/a-link"
+import ThemeToggle from "../components/theme-toggle"
 
 const Footer = () => {
   return (
     <Container>
       <FooterRow>
+        <ThemeToggle />
+      </FooterRow>
+      <FooterRow>
         <SocialLink
           href="mailto:franciscoamado@live.com.pt"
           target="_blank"
-          className="btn-social"
+          className="btn-social "
         >
-          👋🏻
+          👋🏻.
         </SocialLink>
-      </FooterRow>
-      <FooterRow>
         <SocialLink
           href="https://twitter.com/franciscosamado"
           target="_blank"

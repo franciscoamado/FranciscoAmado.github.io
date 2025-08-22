@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -14,12 +14,14 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
         <Container>
-        <h1 class="text-lg font-bold text-zinc-900 dark:text-zinc-100 my-12">{post.frontmatter.title}</h1>
+        <h1 class="text-lg font-bold text-zinc-900 dark:text-zinc-100 my-12 hover:opacity-60">
+          <Link to="/blog/">{post.frontmatter.title}</Link>
+        </h1>
           <p
             style={{
               ...scale(-1 / 5),
@@ -30,13 +32,26 @@ class BlogPostTemplate extends React.Component {
           >
             {post.frontmatter.date}
           </p>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div class="prose prose-lg max-w-none
+          prose-headings:text-zinc-900 dark:prose-headings:text-zinc-100
+          prose-h1:text-zinc-900 dark:prose-h1:text-zinc-100
+          prose-h2:text-zinc-900 dark:prose-h2:text-zinc-100
+          prose-h3:text-zinc-900 dark:prose-h3:text-zinc-100
+          prose-h4:text-zinc-900 dark:prose-h4:text-zinc-100
+          prose-h5:text-zinc-900 dark:prose-h5:text-zinc-100
+          prose-h6:text-zinc-900 dark:prose-h6:text-zinc-100
+          prose-p:text-zinc-900 dark:prose-p:text-zinc-100
+          prose-strong:text-zinc-900 dark:prose-strong:text-zinc-100
+          prose-code:text-zinc-900 dark:prose-code:text-zinc-100
+          prose-pre:text-zinc-900 dark:prose-pre:text-zinc-100
+          prose-a:text-zinc-900 dark:prose-a:text-zinc-100 prose-a:underline prose-a:underline-offset-2
+          text-zinc-900 dark:text-zinc-100" dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
               marginBottom: rhythm(1),
             }}
           />
-          <h4>That's it for now 👋🏻</h4>
+          <h4 class="mt-20 text-zinc-900 dark:text-zinc-100">That's it for now 👋🏻</h4>
         </Container>
 
         <ul

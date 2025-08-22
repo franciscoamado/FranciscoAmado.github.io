@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Tag from "../components/tag"
 import Grid from "../components/grid"
 import Item from "../components/grid-item"
@@ -11,7 +11,7 @@ class IndexPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title="Home"
           keywords={[
             `Francisco`,
@@ -73,11 +73,9 @@ class IndexPage extends React.Component {
         <Grid>
           <Item title="One Swift to Rule them all 🎥📣" caption="Dec 2022">
             <p>
-              Presented at one of Infraspeak
-              's <Tag text="event" href="https://www.linkedin.com/events/speak-out-mobilesdevs-kotlinpla7008850125951254529/theater/"/>.
+              Presented at one of Infraspeak's <Tag text="event" href="https://www.linkedin.com/events/speak-out-mobilesdevs-kotlinpla7008850125951254529/theater/"/>.
               Applying Swift to iOS, Backend, Frontend, GraphQL and its Developer Experience
-              joining both worlds, this was a good moment to test
-              the tool's constraints.
+              all together, this was a good moment to test the tool's constraints.
             </p>
           </Item>
 

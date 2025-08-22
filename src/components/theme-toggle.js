@@ -1,9 +1,9 @@
 import React from 'react'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
-import { useDarkMode } from '../hooks/use-dark-mode'
+import { useTheme } from '../contexts/theme-context'
 
 const ThemeToggle = () => {
-  const [theme, toggleTheme] = useDarkMode()
+  const { theme, toggleTheme } = useTheme()
   const isDarkMode = theme === 'dark'
 
   return (
