@@ -71,6 +71,13 @@ class IndexPage extends React.Component {
 
         <h3 class="mb-8 font-extrabold uppercase tracking-wider text-zinc-900 dark:text-zinc-100 ">Projects</h3>
         <Grid>
+          <Item title="Shaddy 🎨💡" caption="Aug 2025">
+            <p>
+              A Shadcn/ui inspired theme package for Visual Studio Code that provides an improved aesthetic on the Dark High Contrast theme while maintaining the contrast for better code readability.
+              <br /><Tag text="VS Code Marketplace" href="https://marketplace.visualstudio.com/items?itemName=Francisco.shaddy" />
+            </p>
+          </Item>
+
           <Item title="One Swift to Rule them all 🎥📣" caption="Dec 2022">
             <p>
               Presented at one of Infraspeak's <Tag text="event" href="https://www.linkedin.com/events/speak-out-mobilesdevs-kotlinpla7008850125951254529/theater/"/>.
